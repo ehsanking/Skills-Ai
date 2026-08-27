@@ -51,9 +51,10 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 
 ### विंडोज़
 
-[`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB
-
-एक पोर्टेबल बिल्ड। कहीं भी अनज़िप करें और `SkillsAI.exe` चलाएँ — कुछ भी इंस्टॉल नहीं होता, रजिस्ट्री में कुछ नहीं लिखा जाता, और पहली बार खुलने पर कैटलॉग `%APPDATA%\Skills AI` में खुल जाता है। विंडोज़ 10 (1809) और उसके बाद, 64-बिट। हटाने के लिए फ़ोल्डर मिटा दें।
+| फ़ाइल | किसके लिए |
+|---|---|
+| [`SkillsAI-1.0.0-windows-x64-setup.exe`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64-setup.exe) — 23 MB | **इंस्टॉलर.** आपके अपने यूज़र फ़ोल्डर में इंस्टॉल होता है — कोई एडमिन अनुमति नहीं माँगता, आपके अकाउंट के बाहर कुछ नहीं लिखता। स्टार्ट मेन्यू में एंट्री और एक सही अनइंस्टॉलर जोड़ता है। |
+| [`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB | **पोर्टेबल ज़िप.** एक पोर्टेबल बिल्ड। कहीं भी अनज़िप करें और `SkillsAI.exe` चलाएँ — कुछ भी इंस्टॉल नहीं होता, रजिस्ट्री में कुछ नहीं लिखा जाता, और पहली बार खुलने पर कैटलॉग `%APPDATA%\Skills AI` में खुल जाता है। विंडोज़ 10 (1809) और उसके बाद, 64-बिट। हटाने के लिए फ़ोल्डर मिटा दें। |
 
 <p align="center">
   <img src="screenshots/05-windows.png" width="46%" alt="विंडोज़ बिल्ड: वही कैटलॉग, एक डेस्कटॉप विंडो में">
@@ -62,11 +63,12 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 विंडोज़ कहेगा कि वह प्रकाशक को नहीं पहचानता। यह चेतावनी अपेक्षित है: यह बिल्ड किसी भुगतान वाले कोड-साइनिंग सर्टिफ़िकेट से साइन नहीं है। आपसे भरोसे पर आगे बढ़ने को कहने के बजाय, यह ज़िप का SHA-256 है — डाउनलोड की गई फ़ाइल से मिलाकर देखें।
 
 ```
-d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a
+ab39330edf1630786a2c017af9fccf0ed5df8544cf505d90cd7f4f27d3b6a9e6  SkillsAI-1.0.0-windows-x64-setup.exe
+d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a  SkillsAI-1.0.0-windows-x64.zip
 ```
 
 ```
-certutil -hashfile SkillsAI-1.0.0-windows-x64.zip SHA256
+certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
 ```
 
 ## यह क्या है

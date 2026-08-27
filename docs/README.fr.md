@@ -51,9 +51,10 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 
 ### Windows
 
-[`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB
-
-Une version portable. Décompressez-la où vous voulez et lancez `SkillsAI.exe` : rien n’est installé, rien n’est écrit dans le registre, et le catalogue est extrait dans `%APPDATA%\Skills AI` au premier lancement. Windows 10 (1809) et plus, 64 bits. Pour l’enlever, supprimez le dossier.
+| Fichier | Pour |
+|---|---|
+| [`SkillsAI-1.0.0-windows-x64-setup.exe`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64-setup.exe) — 23 MB | **Programme d’installation.** S’installe dans votre propre dossier utilisateur : aucune demande d’administrateur, rien d’écrit en dehors de votre compte. Ajoute une entrée au menu Démarrer et un vrai programme de désinstallation. |
+| [`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB | **Zip portable.** Une version portable. Décompressez-la où vous voulez et lancez `SkillsAI.exe` : rien n’est installé, rien n’est écrit dans le registre, et le catalogue est extrait dans `%APPDATA%\Skills AI` au premier lancement. Windows 10 (1809) et plus, 64 bits. Pour l’enlever, supprimez le dossier. |
 
 <p align="center">
   <img src="screenshots/05-windows.png" width="46%" alt="La version Windows : le même catalogue, dans une fenêtre de bureau">
@@ -62,11 +63,12 @@ Une version portable. Décompressez-la où vous voulez et lancez `SkillsAI.exe` 
 Windows dira qu’il ne reconnaît pas l’éditeur. Cet avertissement est normal : la version n’est pas signée avec un certificat de signature de code payant. Plutôt que de vous demander de passer outre sur parole, voici le SHA-256 du zip — vérifiez-le sur le fichier que vous avez téléchargé.
 
 ```
-d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a
+ab39330edf1630786a2c017af9fccf0ed5df8544cf505d90cd7f4f27d3b6a9e6  SkillsAI-1.0.0-windows-x64-setup.exe
+d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a  SkillsAI-1.0.0-windows-x64.zip
 ```
 
 ```
-certutil -hashfile SkillsAI-1.0.0-windows-x64.zip SHA256
+certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
 ```
 
 ## Ce que c'est

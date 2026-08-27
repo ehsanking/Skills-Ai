@@ -51,9 +51,10 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 
 ### Windows
 
-[`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB
-
-A portable build. Unzip it anywhere and run `SkillsAI.exe` — nothing is installed, nothing is written to the registry, and the catalogue is unpacked into `%APPDATA%\Skills AI` the first time it opens. Windows 10 (1809) and newer, 64-bit. To remove it, delete the folder.
+| File | For |
+|---|---|
+| [`SkillsAI-1.0.0-windows-x64-setup.exe`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64-setup.exe) — 23 MB | **Installer.** Installs into your own user folder — no administrator prompt, nothing written outside your account. Adds a Start Menu entry and a proper uninstaller. |
+| [`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB | **Portable zip.** A portable build. Unzip it anywhere and run `SkillsAI.exe` — nothing is installed, nothing is written to the registry, and the catalogue is unpacked into `%APPDATA%\Skills AI` the first time it opens. Windows 10 (1809) and newer, 64-bit. To remove it, delete the folder. |
 
 <p align="center">
   <img src="docs/screenshots/05-windows.png" width="46%" alt="The Windows build: the same catalogue, running as a desktop window">
@@ -62,11 +63,12 @@ A portable build. Unzip it anywhere and run `SkillsAI.exe` — nothing is instal
 Windows will say it does not recognise the publisher. That warning is expected: the build is not signed with a paid code-signing certificate. Rather than asking you to click past it on trust, here is the SHA-256 of the zip — check it against the file you downloaded.
 
 ```
-d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a
+ab39330edf1630786a2c017af9fccf0ed5df8544cf505d90cd7f4f27d3b6a9e6  SkillsAI-1.0.0-windows-x64-setup.exe
+d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a  SkillsAI-1.0.0-windows-x64.zip
 ```
 
 ```
-certutil -hashfile SkillsAI-1.0.0-windows-x64.zip SHA256
+certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
 ```
 
 ## What it is

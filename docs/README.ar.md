@@ -53,9 +53,10 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 
 ### ويندوز
 
-[`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB
-
-نسخة محمولة. فك الضغط في أي مكان وشغّل `SkillsAI.exe` — لا شيء يُثبَّت، ولا شيء يُكتب في السجل، ويُفك الفهرس داخل `%APPDATA%\Skills AI` عند أول تشغيل. ويندوز ١٠ (إصدار 1809) فما فوق، ٦٤ بت. لإزالته، احذف المجلد.
+| الملف | لِـ |
+|---|---|
+| [`SkillsAI-1.0.0-windows-x64-setup.exe`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64-setup.exe) — 23 MB | **المثبِّت.** يُثبَّت داخل مجلد المستخدم الخاص بك — بلا طلب صلاحيات مدير، وبلا كتابة أي شيء خارج حسابك. يضيف اختصارا في قائمة ابدأ وأداة إزالة حقيقية. |
+| [`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB | **أرشيف محمول.** نسخة محمولة. فك الضغط في أي مكان وشغّل `SkillsAI.exe` — لا شيء يُثبَّت، ولا شيء يُكتب في السجل، ويُفك الفهرس داخل `%APPDATA%\Skills AI` عند أول تشغيل. ويندوز ١٠ (إصدار 1809) فما فوق، ٦٤ بت. لإزالته، احذف المجلد. |
 
 <p align="center">
   <img src="screenshots/05-windows.png" width="46%" alt="نسخة ويندوز: الفهرس نفسه، في نافذة سطح مكتب">
@@ -64,11 +65,12 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 سيقول ويندوز إنه لا يعرف الناشر. هذا التحذير متوقع: النسخة ليست موقَّعة بشهادة توقيع مدفوعة. وبدل أن أطلب منك تجاوزه ثقة بي، هذه بصمة SHA-256 لملف الأرشيف — قارنها بالملف الذي نزّلته.
 
 ```
-d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a
+ab39330edf1630786a2c017af9fccf0ed5df8544cf505d90cd7f4f27d3b6a9e6  SkillsAI-1.0.0-windows-x64-setup.exe
+d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a  SkillsAI-1.0.0-windows-x64.zip
 ```
 
 ```
-certutil -hashfile SkillsAI-1.0.0-windows-x64.zip SHA256
+certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
 ```
 
 ## ما هذا
