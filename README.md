@@ -90,7 +90,7 @@ Skills AI collects **5,402 of them for 102 tools**, sorts them into 12 categorie
   <img src="assets/readme/how-it-works.svg" width="100%" alt="Three steps: the whole catalogue ships inside the download, opens with no network, and is replaced by a verified update at a later launch">
 </p>
 
-- **In the download** — `skills.db`, 17 MB of SQLite: 5402 skills with their bodies deflated, a full-text index over all of them, and 33 third-party licence texts in full.
+- **In the download** — `skills.db`, 17 MB of SQLite: 5,402 skills with their bodies deflated, a full-text index over all of them, and 33 third-party licence texts in full.
 - **First launch** — Copied out of the package once and opened read-only. Search, read, copy — no network, no account, no sign-up.
 - **When the catalogue grows** — The server publishes a new corpus. The app downloads it, checks its sha256, and stages it beside the live file — never over it — then swaps it in at the next launch.
 

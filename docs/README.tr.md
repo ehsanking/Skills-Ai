@@ -90,7 +90,7 @@ Skills AI bunlardan **102 araç için 5,402 tanesini** topluyor, 12 kategoriye a
   <img src="../assets/readme/how-it-works.svg" width="100%" alt="Üç adım: bütün katalog indirilen dosyanın içinde gelir, ağ olmadan açılır ve sonraki açılışta doğrulanmış bir güncellemeyle değiştirilir">
 </p>
 
-- **İndirilenin içinde** — `skills.db`, 17 MB SQLite: gövdeleri sıkıştırılmış 5402 beceri, hepsinin üzerinde tam metin dizini ve 33 üçüncü taraf lisans metni tam olarak.
+- **İndirilenin içinde** — `skills.db`, 17 MB SQLite: gövdeleri sıkıştırılmış 5,402 beceri, hepsinin üzerinde tam metin dizini ve 33 üçüncü taraf lisans metni tam olarak.
 - **İlk açılış** — Paketten bir kez çıkarılır ve salt okunur açılır. Ara, oku, kopyala — ağ yok, hesap yok, kayıt yok.
 - **Katalog büyüdüğünde** — Sunucu yeni bir derlem yayımlar. Uygulama indirir, sha256 değerini doğrular ve canlı dosyanın yanına koyar — üzerine değil — sonra bir sonraki açılışta değiştirir.
 

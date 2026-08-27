@@ -90,7 +90,7 @@ Skills AI sammelt **5,402 davon für 102 Werkzeuge**, sortiert sie in 12 Kategor
   <img src="../assets/readme/how-it-works.svg" width="100%" alt="Drei Schritte: der ganze Katalog steckt im Download, öffnet ohne Netz und wird bei einem späteren Start durch ein geprüftes Update ersetzt">
 </p>
 
-- **Im Download** — `skills.db`, 17 MB SQLite: 5402 Fähigkeiten mit komprimierten Texten, ein Volltextindex über alle und 33 vollständige Lizenztexte Dritter.
+- **Im Download** — `skills.db`, 17 MB SQLite: 5,402 Fähigkeiten mit komprimierten Texten, ein Volltextindex über alle und 33 vollständige Lizenztexte Dritter.
 - **Erster Start** — Einmal aus dem Paket kopiert und schreibgeschützt geöffnet. Suchen, lesen, kopieren — kein Netz, kein Konto, keine Anmeldung.
 - **Wenn der Katalog wächst** — Der Server veröffentlicht ein neues Korpus. Die App lädt es, prüft seinen sha256 und legt es neben die aktive Datei — nie darüber — und tauscht sie beim nächsten Start aus.
 

@@ -90,7 +90,7 @@ Skills AI en rassemble **5,402 pour 102 outils**, les range en 12 catégories et
   <img src="../assets/readme/how-it-works.svg" width="100%" alt="Trois étapes : tout le catalogue est dans le téléchargement, il s’ouvre sans réseau et il est remplacé par une mise à jour vérifiée au lancement suivant">
 </p>
 
-- **Dans le téléchargement** — `skills.db`, 17 Mo de SQLite : 5402 compétences aux textes compressés, un index plein texte sur toutes, et 33 textes de licence tiers en entier.
+- **Dans le téléchargement** — `skills.db`, 17 Mo de SQLite : 5,402 compétences aux textes compressés, un index plein texte sur toutes, et 33 textes de licence tiers en entier.
 - **Premier lancement** — Copié une fois hors du paquet et ouvert en lecture seule. Cherchez, lisez, copiez — sans réseau, sans compte, sans inscription.
 - **Quand le catalogue grandit** — Le serveur publie un nouveau corpus. L’application le télécharge, vérifie son sha256 et le place à côté du fichier actif — jamais dessus — puis l’échange au lancement suivant.
 
