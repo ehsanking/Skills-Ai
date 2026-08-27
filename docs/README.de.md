@@ -25,15 +25,17 @@ Ein Verzeichnis von KI-Werkzeugen und den Fähigkeiten, die sie in deiner Arbeit
 
 ## Herunterladen
 
+### Android
+
 | Datei | Für |
 |---|---|
-| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Die meisten Telefone — alles aus etwa den letzten acht Jahren. **Hier anfangen.** |
-| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Ältere oder einfache Telefone, 32 Bit. |
-| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Emulatoren und die wenigen x86-Tablets. |
+| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-arm64-v8a-release.apk) | Die meisten Telefone — alles aus etwa den letzten acht Jahren. **Hier anfangen.** |
+| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-armeabi-v7a-release.apk) | Ältere oder einfache Telefone, 32 Bit. |
+| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-x86_64-release.apk) | Emulatoren und die wenigen x86-Tablets. |
 
 Bei der falschen Datei verweigert Android die Installation, statt etwas Kaputtes zu installieren — `arm64-v8a` zuerst zu probieren kostet also nichts.
 
-### Prüfen, was Sie geladen haben
+**Prüfen, was Sie geladen haben**
 
 Jede APK hier ist mit demselben Schlüssel signiert, und Sie können das prüfen, bevor Sie etwas installieren:
 
@@ -45,6 +47,26 @@ Das Zertifikat sollte `CN=Ehsan King, OU=Skills AI` mit diesem SHA-256-Fingerpri
 
 ```
 DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
+
+### Windows
+
+[`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB
+
+Ein portabler Build. Irgendwo entpacken und `SkillsAI.exe` starten — es wird nichts installiert, nichts in die Registry geschrieben, und der Katalog wird beim ersten Start nach `%APPDATA%\Skills AI` entpackt. Windows 10 (1809) und neuer, 64 Bit. Zum Entfernen den Ordner löschen.
+
+<p align="center">
+  <img src="screenshots/05-windows.png" width="46%" alt="Der Windows-Build: derselbe Katalog, als Desktop-Fenster">
+</p>
+
+Windows wird sagen, es kenne den Herausgeber nicht. Diese Warnung ist zu erwarten: der Build ist nicht mit einem kostenpflichtigen Signaturzertifikat signiert. Statt Sie zu bitten, sie auf Vertrauen hin wegzuklicken, hier der SHA-256 der ZIP-Datei — prüfen Sie ihn gegen die Datei, die Sie geladen haben.
+
+```
+d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a
+```
+
+```
+certutil -hashfile SkillsAI-1.0.0-windows-x64.zip SHA256
 ```
 
 ## Was es ist

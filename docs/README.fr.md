@@ -25,15 +25,17 @@ Un répertoire d'outils d'IA et des compétences qui les rendent meilleurs dans 
 
 ## Télécharger
 
+### Android
+
 | Fichier | Pour |
 |---|---|
-| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | La plupart des téléphones — à peu près tout ce qui date des huit dernières années. **Commencez ici.** |
-| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Téléphones anciens ou d’entrée de gamme, 32 bits. |
-| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Émulateurs, et les quelques tablettes x86. |
+| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-arm64-v8a-release.apk) | La plupart des téléphones — à peu près tout ce qui date des huit dernières années. **Commencez ici.** |
+| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-armeabi-v7a-release.apk) | Téléphones anciens ou d’entrée de gamme, 32 bits. |
+| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-x86_64-release.apk) | Émulateurs, et les quelques tablettes x86. |
 
 Si vous prenez le mauvais, Android refuse de l’installer plutôt que d’installer quelque chose de cassé — essayer `arm64-v8a` d’abord ne coûte donc rien.
 
-### Vérifier ce que vous avez téléchargé
+**Vérifier ce que vous avez téléchargé**
 
 Chaque APK ici est signé avec la même clé, et vous pouvez le vérifier avant d’installer quoi que ce soit :
 
@@ -45,6 +47,26 @@ Le certificat doit indiquer `CN=Ehsan King, OU=Skills AI` avec cette empreinte S
 
 ```
 DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
+
+### Windows
+
+[`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB
+
+Une version portable. Décompressez-la où vous voulez et lancez `SkillsAI.exe` : rien n’est installé, rien n’est écrit dans le registre, et le catalogue est extrait dans `%APPDATA%\Skills AI` au premier lancement. Windows 10 (1809) et plus, 64 bits. Pour l’enlever, supprimez le dossier.
+
+<p align="center">
+  <img src="screenshots/05-windows.png" width="46%" alt="La version Windows : le même catalogue, dans une fenêtre de bureau">
+</p>
+
+Windows dira qu’il ne reconnaît pas l’éditeur. Cet avertissement est normal : la version n’est pas signée avec un certificat de signature de code payant. Plutôt que de vous demander de passer outre sur parole, voici le SHA-256 du zip — vérifiez-le sur le fichier que vous avez téléchargé.
+
+```
+d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a
+```
+
+```
+certutil -hashfile SkillsAI-1.0.0-windows-x64.zip SHA256
 ```
 
 ## Ce que c'est

@@ -25,15 +25,17 @@ Un directorio de herramientas de IA y las habilidades que las hacen mejores en t
 
 ## Descargar
 
+### Android
+
 | Archivo | Para |
 |---|---|
-| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | La mayoría de los teléfonos — cualquiera de los últimos ocho años. **Empieza aquí.** |
-| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Teléfonos antiguos o de gama de entrada, 32 bits. |
-| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Emuladores y las pocas tabletas x86. |
+| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-arm64-v8a-release.apk) | La mayoría de los teléfonos — cualquiera de los últimos ocho años. **Empieza aquí.** |
+| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-armeabi-v7a-release.apk) | Teléfonos antiguos o de gama de entrada, 32 bits. |
+| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-x86_64-release.apk) | Emuladores y las pocas tabletas x86. |
 
 Si eliges el equivocado, Android se niega a instalarlo en lugar de instalar algo roto — así que probar `arm64-v8a` primero no cuesta nada.
 
-### Comprobar lo que descargaste
+**Comprobar lo que descargaste**
 
 Cada APK aquí está firmado con la misma clave, y puedes comprobarlo antes de instalar nada:
 
@@ -45,6 +47,26 @@ El certificado debe decir `CN=Ehsan King, OU=Skills AI` con esta huella SHA-256.
 
 ```
 DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
+
+### Windows
+
+[`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB
+
+Una compilación portátil. Descomprímela donde quieras y ejecuta `SkillsAI.exe`: no se instala nada, no se escribe nada en el registro y el catálogo se descomprime en `%APPDATA%\Skills AI` la primera vez que se abre. Windows 10 (1809) o posterior, 64 bits. Para quitarlo, borra la carpeta.
+
+<p align="center">
+  <img src="screenshots/05-windows.png" width="46%" alt="La compilación de Windows: el mismo catálogo, en una ventana de escritorio">
+</p>
+
+Windows dirá que no reconoce al editor. Esa advertencia es esperable: la compilación no está firmada con un certificado de firma de código de pago. En lugar de pedirte que la saltes por confianza, aquí está el SHA-256 del zip: compruébalo contra el archivo que descargaste.
+
+```
+d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a
+```
+
+```
+certutil -hashfile SkillsAI-1.0.0-windows-x64.zip SHA256
 ```
 
 ## Qué es

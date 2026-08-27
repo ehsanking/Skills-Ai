@@ -25,15 +25,17 @@ A directory of AI tools and the skills that make them better at your work — of
 
 ## Download
 
+### Android
+
 | File | For |
 |---|---|
-| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Most phones — anything made in roughly the last eight years. **Start here.** |
-| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Older or entry-level phones, 32-bit. |
-| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Emulators, and the handful of x86 tablets. |
+| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-arm64-v8a-release.apk) | Most phones — anything made in roughly the last eight years. **Start here.** |
+| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-armeabi-v7a-release.apk) | Older or entry-level phones, 32-bit. |
+| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-x86_64-release.apk) | Emulators, and the handful of x86 tablets. |
 
 Pick the wrong one and Android refuses to install it rather than installing something broken — so trying `arm64-v8a` first costs nothing.
 
-### Checking what you downloaded
+**Checking what you downloaded**
 
 Every APK here is signed with the same key, and you can check that before you install anything:
 
@@ -45,6 +47,26 @@ The certificate should read `CN=Ehsan King, OU=Skills AI` with this SHA-256 fing
 
 ```
 DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
+
+### Windows
+
+[`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB
+
+A portable build. Unzip it anywhere and run `SkillsAI.exe` — nothing is installed, nothing is written to the registry, and the catalogue is unpacked into `%APPDATA%\Skills AI` the first time it opens. Windows 10 (1809) and newer, 64-bit. To remove it, delete the folder.
+
+<p align="center">
+  <img src="docs/screenshots/05-windows.png" width="46%" alt="The Windows build: the same catalogue, running as a desktop window">
+</p>
+
+Windows will say it does not recognise the publisher. That warning is expected: the build is not signed with a paid code-signing certificate. Rather than asking you to click past it on trust, here is the SHA-256 of the zip — check it against the file you downloaded.
+
+```
+d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a
+```
+
+```
+certutil -hashfile SkillsAI-1.0.0-windows-x64.zip SHA256
 ```
 
 ## What it is

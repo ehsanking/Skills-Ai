@@ -25,15 +25,17 @@
 
 ## डाउनलोड
 
+### एंड्रॉइड
+
 | फ़ाइल | किसके लिए |
 |---|---|
-| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | ज़्यादातर फ़ोन — लगभग पिछले आठ साल में बना कोई भी। **यहीं से शुरू करें।** |
-| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | पुराने या एंट्री-लेवल फ़ोन, 32-बिट। |
-| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | एमुलेटर, और गिने-चुने x86 टैबलेट। |
+| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-arm64-v8a-release.apk) | ज़्यादातर फ़ोन — लगभग पिछले आठ साल में बना कोई भी। **यहीं से शुरू करें।** |
+| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-armeabi-v7a-release.apk) | पुराने या एंट्री-लेवल फ़ोन, 32-बिट। |
+| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-x86_64-release.apk) | एमुलेटर, और गिने-चुने x86 टैबलेट। |
 
 गलत चुनने पर Android कुछ टूटा हुआ इंस्टॉल करने के बजाय इंस्टॉल करने से मना कर देता है — इसलिए पहले `arm64-v8a` आज़माने में कुछ नहीं जाता।
 
-### जो डाउनलोड किया उसकी जाँच
+**जो डाउनलोड किया उसकी जाँच**
 
 यहाँ का हर APK एक ही की से साइन किया गया है, और कुछ भी इंस्टॉल करने से पहले आप इसे जाँच सकते हैं:
 
@@ -45,6 +47,26 @@ apksigner verify --print-certs app-arm64-v8a-release.apk
 
 ```
 DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
+
+### विंडोज़
+
+[`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB
+
+एक पोर्टेबल बिल्ड। कहीं भी अनज़िप करें और `SkillsAI.exe` चलाएँ — कुछ भी इंस्टॉल नहीं होता, रजिस्ट्री में कुछ नहीं लिखा जाता, और पहली बार खुलने पर कैटलॉग `%APPDATA%\Skills AI` में खुल जाता है। विंडोज़ 10 (1809) और उसके बाद, 64-बिट। हटाने के लिए फ़ोल्डर मिटा दें।
+
+<p align="center">
+  <img src="screenshots/05-windows.png" width="46%" alt="विंडोज़ बिल्ड: वही कैटलॉग, एक डेस्कटॉप विंडो में">
+</p>
+
+विंडोज़ कहेगा कि वह प्रकाशक को नहीं पहचानता। यह चेतावनी अपेक्षित है: यह बिल्ड किसी भुगतान वाले कोड-साइनिंग सर्टिफ़िकेट से साइन नहीं है। आपसे भरोसे पर आगे बढ़ने को कहने के बजाय, यह ज़िप का SHA-256 है — डाउनलोड की गई फ़ाइल से मिलाकर देखें।
+
+```
+d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a
+```
+
+```
+certutil -hashfile SkillsAI-1.0.0-windows-x64.zip SHA256
 ```
 
 ## यह क्या है

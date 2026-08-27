@@ -27,15 +27,17 @@
 
 ## التنزيل
 
+### أندرويد
+
 | الملف | لِـ |
 |---|---|
-| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | معظم الهواتف — أي جهاز صُنع تقريبا في السنوات الثماني الأخيرة. **ابدأ من هنا.** |
-| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | الهواتف الأقدم أو الاقتصادية، ٣٢ بت. |
-| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | المحاكيات وقلة من أجهزة x86 اللوحية. |
+| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-arm64-v8a-release.apk) | معظم الهواتف — أي جهاز صُنع تقريبا في السنوات الثماني الأخيرة. **ابدأ من هنا.** |
+| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-armeabi-v7a-release.apk) | الهواتف الأقدم أو الاقتصادية، ٣٢ بت. |
+| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-x86_64-release.apk) | المحاكيات وقلة من أجهزة x86 اللوحية. |
 
 إن اخترت الملف الخطأ يرفض أندرويد تثبيته بدل أن يثبت شيئا معطوبا — لذا تجربة `arm64-v8a` أولا لا تكلف شيئا.
 
-### التحقق مما نزّلته
+**التحقق مما نزّلته**
 
 كل ملف APK هنا موقَّع بالمفتاح نفسه، ويمكنك التحقق من ذلك قبل تثبيت أي شيء:
 
@@ -47,6 +49,26 @@ apksigner verify --print-certs app-arm64-v8a-release.apk
 
 ```
 DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
+
+### ويندوز
+
+[`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB
+
+نسخة محمولة. فك الضغط في أي مكان وشغّل `SkillsAI.exe` — لا شيء يُثبَّت، ولا شيء يُكتب في السجل، ويُفك الفهرس داخل `%APPDATA%\Skills AI` عند أول تشغيل. ويندوز ١٠ (إصدار 1809) فما فوق، ٦٤ بت. لإزالته، احذف المجلد.
+
+<p align="center">
+  <img src="screenshots/05-windows.png" width="46%" alt="نسخة ويندوز: الفهرس نفسه، في نافذة سطح مكتب">
+</p>
+
+سيقول ويندوز إنه لا يعرف الناشر. هذا التحذير متوقع: النسخة ليست موقَّعة بشهادة توقيع مدفوعة. وبدل أن أطلب منك تجاوزه ثقة بي، هذه بصمة SHA-256 لملف الأرشيف — قارنها بالملف الذي نزّلته.
+
+```
+d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a
+```
+
+```
+certutil -hashfile SkillsAI-1.0.0-windows-x64.zip SHA256
 ```
 
 ## ما هذا

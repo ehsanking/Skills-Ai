@@ -25,15 +25,17 @@ Yapay zeka araçlarının ve onları işinizde daha iyi yapan becerilerin rehber
 
 ## İndir
 
+### Android
+
 | Dosya | Şunun için |
 |---|---|
-| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Çoğu telefon — kabaca son sekiz yılda yapılmış her şey. **Buradan başlayın.** |
-| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Daha eski ya da giriş seviyesi telefonlar, 32 bit. |
-| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Emülatörler ve birkaç x86 tablet. |
+| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-arm64-v8a-release.apk) | Çoğu telefon — kabaca son sekiz yılda yapılmış her şey. **Buradan başlayın.** |
+| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-armeabi-v7a-release.apk) | Daha eski ya da giriş seviyesi telefonlar, 32 bit. |
+| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-x86_64-release.apk) | Emülatörler ve birkaç x86 tablet. |
 
 Yanlışını seçerseniz Android bozuk bir şey kurmak yerine kurulumu reddeder — yani önce `arm64-v8a` denemenin bir maliyeti yok.
 
-### İndirdiğinizi doğrulamak
+**İndirdiğinizi doğrulamak**
 
 Buradaki her APK aynı anahtarla imzalıdır ve bir şey kurmadan önce bunu doğrulayabilirsiniz:
 
@@ -45,6 +47,26 @@ Sertifikada `CN=Ehsan King, OU=Skills AI` ve şu SHA-256 parmak izi görünmeli.
 
 ```
 DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
+
+### Windows
+
+[`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB
+
+Taşınabilir bir yapı. Nereye isterseniz açın ve `SkillsAI.exe` dosyasını çalıştırın — hiçbir şey kurulmaz, kayıt defterine bir şey yazılmaz ve katalog ilk açılışta `%APPDATA%\Skills AI` içine çıkarılır. Windows 10 (1809) ve üzeri, 64 bit. Kaldırmak için klasörü silin.
+
+<p align="center">
+  <img src="screenshots/05-windows.png" width="46%" alt="Windows yapısı: aynı katalog, bir masaüstü penceresinde">
+</p>
+
+Windows yayıncıyı tanımadığını söyleyecek. Bu uyarı beklenen bir şey: yapı ücretli bir kod imzalama sertifikasıyla imzalanmadı. Sırf bana güvenip geçmenizi istemek yerine, zip dosyasının SHA-256 değeri burada — indirdiğiniz dosyayla karşılaştırın.
+
+```
+d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a
+```
+
+```
+certutil -hashfile SkillsAI-1.0.0-windows-x64.zip SHA256
 ```
 
 ## Nedir

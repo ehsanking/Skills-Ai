@@ -27,15 +27,17 @@
 
 ## دانلود
 
+### اندروید
+
 | فایل | برای |
 |---|---|
-| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | بیشتر گوشی‌ها — هر چیزی که تقریبا در هشت سال گذشته ساخته شده. **از اینجا شروع کنید.** |
-| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | گوشی‌های قدیمی‌تر یا ارزان‌تر، ۳۲ بیتی. |
-| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | شبیه‌سازها و آن چند تبلت x86. |
+| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-arm64-v8a-release.apk) | بیشتر گوشی‌ها — هر چیزی که تقریبا در هشت سال گذشته ساخته شده. **از اینجا شروع کنید.** |
+| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-armeabi-v7a-release.apk) | گوشی‌های قدیمی‌تر یا ارزان‌تر، ۳۲ بیتی. |
+| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-x86_64-release.apk) | شبیه‌سازها و آن چند تبلت x86. |
 
 اگر اشتباه انتخاب کنید، اندروید به‌جای نصب چیزی خراب، نصبش را رد می‌کند — پس امتحان‌کردن `arm64-v8a` هیچ هزینه‌ای ندارد.
 
-### سنجیدن آنچه دانلود کرده‌اید
+**سنجیدن آنچه دانلود کرده‌اید**
 
 هر APK اینجا با یک کلید امضا شده، و می‌توانید پیش از نصب هر چیزی آن را بسنجید:
 
@@ -47,6 +49,26 @@ apksigner verify --print-certs app-arm64-v8a-release.apk
 
 ```
 DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
+
+### ویندوز
+
+[`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB
+
+یک بیلد قابل حمل. هر جا خواستید از حالت فشرده در بیاورید و `SkillsAI.exe` را اجرا کنید — هیچ چیزی نصب نمی‌شود، هیچ چیزی در رجیستری نوشته نمی‌شود، و پیکره در اولین اجرا داخل `%APPDATA%\Skills AI` باز می‌شود. ویندوز ۱۰ (نسخه ۱۸۰۹) به بالا، ۶۴ بیتی. برای حذفش، پوشه را پاک کنید.
+
+<p align="center">
+  <img src="screenshots/05-windows.png" width="46%" alt="بیلد ویندوز: همان پیکره، در قالب یک پنجره دسکتاپ">
+</p>
+
+ویندوز می‌گوید ناشر را نمی‌شناسد. این هشدار طبیعی است: این بیلد با گواهی امضای کد پولی امضا نشده. به‌جای اینکه از شما بخواهم روی حرف من از آن رد شوید، این SHA-256 فایل زیپ است — با فایلی که دانلود کرده‌اید بسنجیدش.
+
+```
+d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a
+```
+
+```
+certutil -hashfile SkillsAI-1.0.0-windows-x64.zip SHA256
 ```
 
 ## این چیست
