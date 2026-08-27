@@ -1,21 +1,61 @@
-MIT License
+Skills AI — Licence
+Copyright (c) 2026 Ehsan King. All rights reserved.
 
-Copyright (c) 2026 Ehsan
+WHAT THIS COVERS
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This licence covers the Skills AI application — the Android app published under
+the package name `gfly.skillsai.app`, its source code, its user interface, its
+artwork and its accompanying service at ai.ehsanking.ir.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+It does NOT cover the third-party skills and prompts the app redistributes.
+Those remain under the licences their own authors chose, and every one of them
+is named in THIRD-PARTY-NOTICES.md. Nothing in this file takes anything away
+from them.
+
+WHAT YOU MAY DO
+
+You may download, install and use the application, including the release builds
+published on this repository, for personal or commercial purposes, on any number
+of your own devices, for as long as you like. No account is required to use the
+catalogue and no payment is required to install a build published here.
+
+You may quote, screenshot and write about the application freely.
+
+WHAT YOU MAY NOT DO
+
+You may not redistribute, resell, sublicense or publish the application or any
+modified version of it. You may not decompile, reverse engineer or extract the
+application's own content, artwork or code for use in another product. You may
+not publish the application, or anything derived from it, to any application
+store or download site.
+
+WHY IT IS WRITTEN THIS WAY
+
+The application is free. Free is not the same as open source, and this file says
+which one it is rather than letting the price imply the other. You pay nothing to
+download it, install it or use it, and no account is needed to read the
+catalogue; what is not offered is permission to take the code, rename it and
+publish it as something else.
+
+Calling it open source when the source is not open would be worse than either
+choice, so it is not called that.
+
+The catalogue is a different matter. The skills in it were written by other
+people and offered under CC0, MIT, Apache-2.0 and CC-BY-4.0, and the conditions
+those licences attach are honoured: every source is named, every notice travels
+with the work, and the full licence texts ship inside the application as well as
+sitting in THIRD-PARTY-NOTICES.md beside this file. A skill whose author gave no
+licence at all was not included, because no licence means no permission.
+
+NO WARRANTY
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+CONTACT
+
+Ehsan King — https://github.com/ehsanking
