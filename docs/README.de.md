@@ -1,16 +1,51 @@
-<h1 align="center">Skills AI</h1>
-<p align="center">Ein Verzeichnis von KI-Werkzeugen und den Fähigkeiten, die sie in deiner Arbeit besser machen — offline, in acht Sprachen.</p>
-<p align="center">[English](../README.md) · [فارسی](README.fa.md) · [العربية](README.ar.md) · [Türkçe](README.tr.md) · [हिन्दी](README.hi.md) · [Español](README.es.md) · **Deutsch** · [Français](README.fr.md)</p>
-
-
-
 <p align="center">
-  <img src="../docs/screenshots/01-home.png" width="22%" alt="">
-  <img src="../docs/screenshots/02-profile.png" width="22%" alt="">
-  <img src="../docs/screenshots/03-community.png" width="22%" alt="">
-  <img src="../docs/screenshots/04-account.png" width="22%" alt="">
+  <img src="../assets/readme/hero.de.svg" width="100%" alt="Ein Verzeichnis von KI-Werkzeugen und den Fähigkeiten, die sie in deiner Arbeit besser machen — offline, in acht Sprachen.">
 </p>
 
+<div align="center">
+
+Ein Verzeichnis von KI-Werkzeugen und den Fähigkeiten, die sie in deiner Arbeit besser machen — offline, in acht Sprachen.
+
+</div>
+
+<div align="center">
+
+[English](../README.md) · [فارسی](README.fa.md) · [العربية](README.ar.md) · [Türkçe](README.tr.md) · [हिन्दी](README.hi.md) · [Español](README.es.md) · **Deutsch** · [Français](README.fr.md)
+
+</div>
+
+## Wie es aussieht
+
+<p align="center">
+  <img src="screenshots/01-home.png" width="23%" alt="Der Startbildschirm: jedes KI-Werkzeug, nach der Zahl seiner Fähigkeiten sortiert">
+  <img src="screenshots/02-profile.png" width="23%" alt="Eine Person: die Fähigkeiten, die sie veröffentlicht hat, und was andere dazu sagten">
+  <img src="screenshots/03-community.png" width="23%" alt="Die Community: Beiträge, Antworten und von Lesern veröffentlichte Fähigkeiten">
+  <img src="screenshots/04-account.png" width="23%" alt="Das Kontoregal: Anmelden, Favoriten, Sprache und Erscheinungsbild">
+</p>
+
+## Herunterladen
+
+| Datei | Für |
+|---|---|
+| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Die meisten Telefone — alles aus etwa den letzten acht Jahren. **Hier anfangen.** |
+| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Ältere oder einfache Telefone, 32 Bit. |
+| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Emulatoren und die wenigen x86-Tablets. |
+
+Bei der falschen Datei verweigert Android die Installation, statt etwas Kaputtes zu installieren — `arm64-v8a` zuerst zu probieren kostet also nichts.
+
+### Prüfen, was Sie geladen haben
+
+Jede APK hier ist mit demselben Schlüssel signiert, und Sie können das prüfen, bevor Sie etwas installieren:
+
+```
+apksigner verify --print-certs app-arm64-v8a-release.apk
+```
+
+Das Zertifikat sollte `CN=Ehsan King, OU=Skills AI` mit diesem SHA-256-Fingerprint zeigen. Ein Build, der ihn nicht zeigt, kommt nicht von hier.
+
+```
+DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
 
 ## Was es ist
 
@@ -20,44 +55,31 @@ Skills AI sammelt **5,402 davon für 102 Werkzeuge**, sortiert sie in 12 Kategor
 
 ## Was es kann
 
-### Funktioniert ohne Verbindung
+- **Funktioniert ohne Verbindung** — Der ganze Katalog — 5,402 Fähigkeiten, ihr vollständiger Text und der Suchindex — steckt als 17 MB große SQLite-Datenbank in der App. Zum Lesen wird nichts geladen.
+- **Eine Suche, die versteht, in welcher Sprache du tippst** — Volltextsuche über jeden Titel und jeden Text, wobei Persisch und Arabisch zusammengefaltet werden: eine mit arabischem Ye getippte Anfrage findet Text mit persischem Ye, und drei Ziffernsätze zählen als einer.
+- **Kopieren statt abtippen** — Jede Fähigkeit bringt ihren exakten Text mit, die Installationsanleitung für das Werkzeug, zu dem sie gehört, und einen Kopierknopf an jedem Teil.
+- **Hat es wirklich funktioniert?** — Ein Tippen nach der Nutzung sagt, ob es funktioniert hat, teilweise oder gar nicht — für das Modell, das du benutzt hast. Danach werden Fähigkeiten sortiert, pro Person gezählt, sodass häufigeres Antworten nichts verschiebt.
+- **Eine Community ohne Punktetafel** — Veröffentliche eigene Fähigkeiten, folge den Leuten, deren Arbeit dir immer wieder hilft, und sieh an der Fähigkeit selbst, wer von ihnen sie ausprobiert hat. Es gibt keine öffentliche Follower-Rangliste und keinen Endpunkt, der den Graphen auflistet.
+- **Acht Sprachen, vier davon von rechts nach links** — Englisch, Persisch, Arabisch, Türkisch, Hindi, Spanisch, Deutsch und Französisch — die Oberfläche, die Ziffern, die Datumsangaben und die Leserichtung.
 
-Der ganze Katalog — 5,402 Fähigkeiten, ihr vollständiger Text und der Suchindex — steckt als 17 MB große SQLite-Datenbank in der App. Zum Lesen wird nichts geladen.
+## Wie es offline bleibt
 
-### Eine Suche, die versteht, in welcher Sprache du tippst
+<p align="center">
+  <img src="../assets/readme/how-it-works.svg" width="100%" alt="Drei Schritte: der ganze Katalog steckt im Download, öffnet ohne Netz und wird bei einem späteren Start durch ein geprüftes Update ersetzt">
+</p>
 
-Volltextsuche über jeden Titel und jeden Text, wobei Persisch und Arabisch zusammengefaltet werden: eine mit arabischem Ye getippte Anfrage findet Text mit persischem Ye, und drei Ziffernsätze zählen als einer.
-
-### Kopieren statt abtippen
-
-Jede Fähigkeit bringt ihren exakten Text mit, die Installationsanleitung für das Werkzeug, zu dem sie gehört, und einen Kopierknopf an jedem Teil.
-
-### Hat es wirklich funktioniert?
-
-Ein Tippen nach der Nutzung sagt, ob es funktioniert hat, teilweise oder gar nicht — für das Modell, das du benutzt hast. Danach werden Fähigkeiten sortiert, pro Person gezählt, sodass häufigeres Antworten nichts verschiebt.
-
-### Eine Community ohne Punktetafel
-
-Veröffentliche eigene Fähigkeiten, folge den Leuten, deren Arbeit dir immer wieder hilft, und sieh an der Fähigkeit selbst, wer von ihnen sie ausprobiert hat. Es gibt keine öffentliche Follower-Rangliste und keinen Endpunkt, der den Graphen auflistet.
-
-### Acht Sprachen, vier davon von rechts nach links
-
-Englisch, Persisch, Arabisch, Türkisch, Hindi, Spanisch, Deutsch und Französisch — die Oberfläche, die Ziffern, die Datumsangaben und die Leserichtung.
-
-## Herunterladen
-
-Lade die APK für dein Telefon aus der [neuesten Version](https://github.com/ehsanking/Skills-Ai/releases/latest). Die meisten Geräte der letzten Jahre brauchen **arm64-v8a**; ältere oder günstigere **armeabi-v7a**. `x86_64` ist für Emulatoren.
-
-Installierst du die falsche, weist Android sie ab — es installiert nichts Kaputtes.
+- **Im Download** — `skills.db`, 17 MB SQLite: 5402 Fähigkeiten mit komprimierten Texten, ein Volltextindex über alle und 33 vollständige Lizenztexte Dritter.
+- **Erster Start** — Einmal aus dem Paket kopiert und schreibgeschützt geöffnet. Suchen, lesen, kopieren — kein Netz, kein Konto, keine Anmeldung.
+- **Wenn der Katalog wächst** — Der Server veröffentlicht ein neues Korpus. Die App lädt es, prüft seinen sha256 und legt es neben die aktive Datei — nie darüber — und tauscht sie beim nächsten Start aus.
 
 ## Wie es gebaut ist
 
 | | |
 |---|---|
-| **Platform** | Android 8.0 and newer |
-| **Framework** | Flutter 3.44 / Dart 3.12 |
-| **Catalogue** | SQLite + FTS4, bodies compressed with zlib, 17 MB inside the APK |
-| **Backend** | Laravel 13 + Filament 5, at [ai.ehsanking.ir](https://ai.ehsanking.ir) |
+| **Android** | 8.0 and newer |
+| **Flutter** | 3.44 / Dart 3.12 |
+| **Catalogue** | SQLite + FTS4, bodies deflated, 17 MB inside the APK |
+| **Backend** | Laravel 13 + Filament 5, [ai.ehsanking.ir](https://ai.ehsanking.ir) |
 | **Package** | `gfly.skillsai.app` |
 | **Tools / skills** | 102 / 5,402 |
 
@@ -88,5 +110,3 @@ Die Anwendung ist proprietär — siehe [LICENSE](../LICENSE). Du darfst die hie
 ## Autor
 
 **Ehsan King** — [github.com/ehsanking](https://github.com/ehsanking)
-
-

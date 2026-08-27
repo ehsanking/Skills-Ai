@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="اسکیلز ای‌آی — 5,402 اسکیل برای 102 ابزار هوش مصنوعی، آفلاین، به هشت زبان">
+  <title>اسکیلز ای‌آی — 5,402 اسکیل برای 102 ابزار هوش مصنوعی، آفلاین، به هشت زبان</title>
+  <rect x="0.5" y="0.5" width="1199" height="419" rx="24" fill="#14161A" stroke="#F4F1EA" stroke-opacity="0.10"/>
+  <g transform="translate(1028 68) scale(0.9)" fill="none" stroke-linecap="round">
+  <path d="M 32 88 A 56 56 0 0 1 88 32" stroke="#F4F1EA" stroke-opacity="0.35" stroke-width="3"/>
+  <path d="M 32 88 A 38 38 0 0 1 70 50" stroke="#F4F1EA" stroke-opacity="0.35" stroke-width="3"/>
+  <path d="M 32 88 A 20 20 0 0 1 52 68" stroke="#F4F1EA" stroke-opacity="0.35" stroke-width="3"/>
+  <path d="M 32 88 L 88 32" stroke="#F4F1EA" stroke-opacity="0.35" stroke-width="3"/>
+  <path d="M 32 88 A 38 38 0 0 1 70 50" stroke="#C8F048" stroke-width="11"/>
+  <circle cx="32" cy="88" r="6.5" fill="#F4F1EA"/>
+  <circle cx="70" cy="50" r="6.5" fill="#F4F1EA"/>
+  <circle cx="88" cy="32" r="8" fill="#F4F1EA"/>
+  </g>
+  <text x="1014" y="154" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#F4F1EA" text-anchor="end">Skills AI</text>
+  <text x="1128" y="286" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="42" font-weight="700" fill="#C8F048" text-anchor="end">5,402</text>
+  <text x="1128" y="318" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9A9DA6" text-anchor="end" unicode-bidi="plaintext">اسکیل</text>
+  <text x="977.32" y="286" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="42" font-weight="700" fill="#C8F048" text-anchor="end">102</text>
+  <text x="977.32" y="318" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9A9DA6" text-anchor="end" unicode-bidi="plaintext">ابزار هوش مصنوعی</text>
+  <text x="775.72" y="286" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="42" font-weight="700" fill="#C8F048" text-anchor="end">8</text>
+  <text x="775.72" y="318" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9A9DA6" text-anchor="end" unicode-bidi="plaintext">زبان</text>
+  <text x="560" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#9A9DA6" text-anchor="end" letter-spacing="2.4" unicode-bidi="plaintext">بیشترین اسکیل</text>
+  <rect x="72" y="78" width="488" height="50" rx="14" fill="#1C1F25" stroke="#F4F1EA" stroke-opacity="0.10"/>
+  <rect x="72" y="78" width="488" height="50" rx="14" fill="#C8F048" fill-opacity="0.14"/>
+  <text x="540" y="111" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#F4F1EA" text-anchor="end">ChatGPT</text>
+  <text x="92" y="111" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="24" font-weight="600" fill="#C8F048" text-anchor="start">2,104</text>
+  <rect x="72" y="139" width="488" height="50" rx="14" fill="#1C1F25" stroke="#F4F1EA" stroke-opacity="0.10"/>
+  <rect x="362.852" y="139" width="197.148" height="50" rx="14" fill="#C8F048" fill-opacity="0.14"/>
+  <text x="540" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#F4F1EA" text-anchor="end">GitHub Copilot</text>
+  <text x="92" y="172" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="24" font-weight="600" fill="#C8F048" text-anchor="start">850</text>
+  <rect x="72" y="200" width="488" height="50" rx="14" fill="#1C1F25" stroke="#F4F1EA" stroke-opacity="0.10"/>
+  <rect x="387.437" y="200" width="172.563" height="50" rx="14" fill="#C8F048" fill-opacity="0.14"/>
+  <text x="540" y="233" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#F4F1EA" text-anchor="end">Gemini</text>
+  <text x="92" y="233" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="24" font-weight="600" fill="#C8F048" text-anchor="start">744</text>
+  <rect x="72" y="261" width="488" height="50" rx="14" fill="#1C1F25" stroke="#F4F1EA" stroke-opacity="0.10"/>
+  <rect x="420.373" y="261" width="139.627" height="50" rx="14" fill="#C8F048" fill-opacity="0.14"/>
+  <text x="540" y="294" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#F4F1EA" text-anchor="end">Claude</text>
+  <text x="92" y="294" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="24" font-weight="600" fill="#C8F048" text-anchor="start">602</text>
+  <rect x="72" y="322" width="488" height="50" rx="14" fill="#1C1F25" stroke="#F4F1EA" stroke-opacity="0.10"/>
+  <rect x="448.669" y="322" width="111.331" height="50" rx="14" fill="#C8F048" fill-opacity="0.14"/>
+  <text x="540" y="355" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#F4F1EA" text-anchor="end">Cursor</text>
+  <text x="92" y="355" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="24" font-weight="600" fill="#C8F048" text-anchor="start">480</text>
+  <text x="560" y="392" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="end" unicode-bidi="plaintext">+ 97 ابزار دیگر · 12 دسته · 17 مگابایت</text>
+</svg>

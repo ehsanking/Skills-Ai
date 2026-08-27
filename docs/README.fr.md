@@ -1,16 +1,51 @@
-<h1 align="center">Skills AI</h1>
-<p align="center">Un répertoire d'outils d'IA et des compétences qui les rendent meilleurs dans votre travail — hors ligne, en huit langues.</p>
-<p align="center">[English](../README.md) · [فارسی](README.fa.md) · [العربية](README.ar.md) · [Türkçe](README.tr.md) · [हिन्दी](README.hi.md) · [Español](README.es.md) · [Deutsch](README.de.md) · **Français**</p>
-
-
-
 <p align="center">
-  <img src="../docs/screenshots/01-home.png" width="22%" alt="">
-  <img src="../docs/screenshots/02-profile.png" width="22%" alt="">
-  <img src="../docs/screenshots/03-community.png" width="22%" alt="">
-  <img src="../docs/screenshots/04-account.png" width="22%" alt="">
+  <img src="../assets/readme/hero.fr.svg" width="100%" alt="Un répertoire d'outils d'IA et des compétences qui les rendent meilleurs dans votre travail — hors ligne, en huit langues.">
 </p>
 
+<div align="center">
+
+Un répertoire d'outils d'IA et des compétences qui les rendent meilleurs dans votre travail — hors ligne, en huit langues.
+
+</div>
+
+<div align="center">
+
+[English](../README.md) · [فارسی](README.fa.md) · [العربية](README.ar.md) · [Türkçe](README.tr.md) · [हिन्दी](README.hi.md) · [Español](README.es.md) · [Deutsch](README.de.md) · **Français**
+
+</div>
+
+## À quoi il ressemble
+
+<p align="center">
+  <img src="screenshots/01-home.png" width="23%" alt="L'écran d'accueil : chaque outil d'IA, classé par nombre de compétences">
+  <img src="screenshots/02-profile.png" width="23%" alt="Une personne : les compétences publiées et ce que les autres en ont dit">
+  <img src="screenshots/03-community.png" width="23%" alt="La communauté : publications, réponses et compétences publiées par les lecteurs">
+  <img src="screenshots/04-account.png" width="23%" alt="Le rayon du compte : connexion, favoris, langue et thème">
+</p>
+
+## Télécharger
+
+| Fichier | Pour |
+|---|---|
+| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | La plupart des téléphones — à peu près tout ce qui date des huit dernières années. **Commencez ici.** |
+| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Téléphones anciens ou d’entrée de gamme, 32 bits. |
+| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Émulateurs, et les quelques tablettes x86. |
+
+Si vous prenez le mauvais, Android refuse de l’installer plutôt que d’installer quelque chose de cassé — essayer `arm64-v8a` d’abord ne coûte donc rien.
+
+### Vérifier ce que vous avez téléchargé
+
+Chaque APK ici est signé avec la même clé, et vous pouvez le vérifier avant d’installer quoi que ce soit :
+
+```
+apksigner verify --print-certs app-arm64-v8a-release.apk
+```
+
+Le certificat doit indiquer `CN=Ehsan King, OU=Skills AI` avec cette empreinte SHA-256. Une version qui ne l’affiche pas ne vient pas d’ici.
+
+```
+DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
 
 ## Ce que c'est
 
@@ -20,44 +55,31 @@ Skills AI en rassemble **5,402 pour 102 outils**, les range en 12 catégories et
 
 ## Ce qu’il fait
 
-### Fonctionne sans connexion
+- **Fonctionne sans connexion** — Tout le catalogue — 5,402 compétences, leur texte intégral et l'index de recherche — tient dans l'application sous forme d'une base SQLite de 17 Mo. Rien n'est téléchargé pour le lire.
+- **Une recherche qui comprend la langue dans laquelle vous tapez** — Recherche plein texte sur chaque titre et chaque corps, le persan et l’arabe étant repliés ensemble : une requête tapée avec le yé arabe trouve un texte écrit avec le yé persan, et les trois jeux de chiffres comptent pour un.
+- **Copiez, ne retapez pas** — Chaque compétence porte son texte exact, la procédure d'installation pour l'outil auquel elle appartient, et un bouton de copie sur chaque partie.
+- **Est-ce que ça a vraiment marché ?** — Une pression après avoir utilisé une compétence dit si elle a marché, en partie, ou pas — pour le modèle que vous avez utilisé. Les compétences sont classées là-dessus, compté par personne, donc répondre plus souvent ne déplace rien.
+- **Une communauté, sans tableau des scores** — Publiez vos propres compétences, suivez les personnes dont le travail vous sert régulièrement, et voyez sur la compétence elle-même qui parmi elles l’a essayée. Il n’y a aucun classement public d’abonnés et aucun point d’accès qui liste le graphe.
+- **Huit langues, dont quatre de droite à gauche** — Anglais, persan, arabe, turc, hindi, espagnol, allemand et français — l'interface, les chiffres, les dates et le sens de la mise en page.
 
-Tout le catalogue — 5,402 compétences, leur texte intégral et l'index de recherche — tient dans l'application sous forme d'une base SQLite de 17 Mo. Rien n'est téléchargé pour le lire.
+## Comment il reste hors ligne
 
-### Une recherche qui comprend la langue dans laquelle vous tapez
+<p align="center">
+  <img src="../assets/readme/how-it-works.svg" width="100%" alt="Trois étapes : tout le catalogue est dans le téléchargement, il s’ouvre sans réseau et il est remplacé par une mise à jour vérifiée au lancement suivant">
+</p>
 
-Recherche plein texte sur chaque titre et chaque corps, le persan et l’arabe étant repliés ensemble : une requête tapée avec le yé arabe trouve un texte écrit avec le yé persan, et les trois jeux de chiffres comptent pour un.
-
-### Copiez, ne retapez pas
-
-Chaque compétence porte son texte exact, la procédure d'installation pour l'outil auquel elle appartient, et un bouton de copie sur chaque partie.
-
-### Est-ce que ça a vraiment marché ?
-
-Une pression après avoir utilisé une compétence dit si elle a marché, en partie, ou pas — pour le modèle que vous avez utilisé. Les compétences sont classées là-dessus, compté par personne, donc répondre plus souvent ne déplace rien.
-
-### Une communauté, sans tableau des scores
-
-Publiez vos propres compétences, suivez les personnes dont le travail vous sert régulièrement, et voyez sur la compétence elle-même qui parmi elles l’a essayée. Il n’y a aucun classement public d’abonnés et aucun point d’accès qui liste le graphe.
-
-### Huit langues, dont quatre de droite à gauche
-
-Anglais, persan, arabe, turc, hindi, espagnol, allemand et français — l'interface, les chiffres, les dates et le sens de la mise en page.
-
-## Télécharger
-
-Téléchargez l'APK de votre téléphone depuis la [dernière version](https://github.com/ehsanking/Skills-Ai/releases/latest). La plupart des téléphones récents ont besoin de **arm64-v8a** ; les plus anciens ou plus abordables, de **armeabi-v7a**. `x86_64` est pour les émulateurs.
-
-Si vous installez le mauvais, Android le refuse : il n'installe rien de cassé.
+- **Dans le téléchargement** — `skills.db`, 17 Mo de SQLite : 5402 compétences aux textes compressés, un index plein texte sur toutes, et 33 textes de licence tiers en entier.
+- **Premier lancement** — Copié une fois hors du paquet et ouvert en lecture seule. Cherchez, lisez, copiez — sans réseau, sans compte, sans inscription.
+- **Quand le catalogue grandit** — Le serveur publie un nouveau corpus. L’application le télécharge, vérifie son sha256 et le place à côté du fichier actif — jamais dessus — puis l’échange au lancement suivant.
 
 ## Comment c’est construit
 
 | | |
 |---|---|
-| **Platform** | Android 8.0 and newer |
-| **Framework** | Flutter 3.44 / Dart 3.12 |
-| **Catalogue** | SQLite + FTS4, bodies compressed with zlib, 17 MB inside the APK |
-| **Backend** | Laravel 13 + Filament 5, at [ai.ehsanking.ir](https://ai.ehsanking.ir) |
+| **Android** | 8.0 and newer |
+| **Flutter** | 3.44 / Dart 3.12 |
+| **Catalogue** | SQLite + FTS4, bodies deflated, 17 MB inside the APK |
+| **Backend** | Laravel 13 + Filament 5, [ai.ehsanking.ir](https://ai.ehsanking.ir) |
 | **Package** | `gfly.skillsai.app` |
 | **Tools / skills** | 102 / 5,402 |
 
@@ -88,5 +110,3 @@ L'application est propriétaire — voir [LICENSE](../LICENSE). Vous pouvez inst
 ## Auteur
 
 **Ehsan King** — [github.com/ehsanking](https://github.com/ehsanking)
-
-

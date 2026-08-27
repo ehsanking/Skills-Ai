@@ -1,16 +1,51 @@
-<h1 align="center">Skills AI</h1>
-<p align="center">Yapay zeka araçlarının ve onları işinizde daha iyi yapan becerilerin rehberi — çevrimdışı, sekiz dilde.</p>
-<p align="center">[English](../README.md) · [فارسی](README.fa.md) · [العربية](README.ar.md) · **Türkçe** · [हिन्दी](README.hi.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [Français](README.fr.md)</p>
-
-
-
 <p align="center">
-  <img src="../docs/screenshots/01-home.png" width="22%" alt="">
-  <img src="../docs/screenshots/02-profile.png" width="22%" alt="">
-  <img src="../docs/screenshots/03-community.png" width="22%" alt="">
-  <img src="../docs/screenshots/04-account.png" width="22%" alt="">
+  <img src="../assets/readme/hero.tr.svg" width="100%" alt="Yapay zeka araçlarının ve onları işinizde daha iyi yapan becerilerin rehberi — çevrimdışı, sekiz dilde.">
 </p>
 
+<div align="center">
+
+Yapay zeka araçlarının ve onları işinizde daha iyi yapan becerilerin rehberi — çevrimdışı, sekiz dilde.
+
+</div>
+
+<div align="center">
+
+[English](../README.md) · [فارسی](README.fa.md) · [العربية](README.ar.md) · **Türkçe** · [हिन्दी](README.hi.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [Français](README.fr.md)
+
+</div>
+
+## Nasıl göründüğü
+
+<p align="center">
+  <img src="screenshots/01-home.png" width="23%" alt="Ana ekran: her yapay zeka aracı, beceri sayısına göre sıralı">
+  <img src="screenshots/02-profile.png" width="23%" alt="Bir kişi: yayımladığı beceriler ve başkalarının onlar hakkında söyledikleri">
+  <img src="screenshots/03-community.png" width="23%" alt="Topluluk: gönderiler, yanıtlar ve okurların yayımladığı beceriler">
+  <img src="screenshots/04-account.png" width="23%" alt="Hesap rafı: giriş, favoriler, dil ve tema">
+</p>
+
+## İndir
+
+| Dosya | Şunun için |
+|---|---|
+| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Çoğu telefon — kabaca son sekiz yılda yapılmış her şey. **Buradan başlayın.** |
+| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Daha eski ya da giriş seviyesi telefonlar, 32 bit. |
+| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest) | Emülatörler ve birkaç x86 tablet. |
+
+Yanlışını seçerseniz Android bozuk bir şey kurmak yerine kurulumu reddeder — yani önce `arm64-v8a` denemenin bir maliyeti yok.
+
+### İndirdiğinizi doğrulamak
+
+Buradaki her APK aynı anahtarla imzalıdır ve bir şey kurmadan önce bunu doğrulayabilirsiniz:
+
+```
+apksigner verify --print-certs app-arm64-v8a-release.apk
+```
+
+Sertifikada `CN=Ehsan King, OU=Skills AI` ve şu SHA-256 parmak izi görünmeli. Bunu göstermeyen bir yapı buradan gelmemiştir.
+
+```
+DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
 
 ## Nedir
 
@@ -20,44 +55,31 @@ Skills AI bunlardan **102 araç için 5,402 tanesini** topluyor, 12 kategoriye a
 
 ## Ne yapar
 
-### Bağlantı olmadan çalışır
+- **Bağlantı olmadan çalışır** — Katalogun tamamı — 5,402 beceri, tam metinleri ve arama dizini — uygulamanın içinde 17 MB’lık bir SQLite veritabanı olarak gelir. Okumak için hiçbir şey indirilmez.
+- **Yazdığınız dili anlayan arama** — Her başlık ve metin üzerinde tam metin arama; Farsça ve Arapça birlikte katlanır: Arapça ye ile yazılan bir sorgu, Farsça ye ile yazılmış metni bulur ve üç rakam kümesi tek sayılır.
+- **Kopyalayın, yeniden yazmayın** — Her beceri kendi tam metnini, ait olduğu araç için kurulum yordamını ve her parçada bir kopyalama düğmesini taşır.
+- **Gerçekten işe yaradı mı?** — Bir beceriyi kullandıktan sonraki tek dokunuş, kullandığınız model için işe yaradı mı, kısmen mi, yoksa yaramadı mı söyler. Beceriler buna göre sıralanır ve kişi başına sayılır; daha sık yanıtlamak hiçbir şeyi değiştirmez.
+- **Skor tablosu olmayan bir topluluk** — Kendi becerilerinizi yayımlayın, işi size sürekli yarayan kişileri takip edin ve becerinin kendi sayfasında hangilerinin denediğini görün. Herkese açık takipçi sıralaması yok, grafiği listeleyen bir uç nokta da yok.
+- **Sekiz dil, dördü sağdan sola** — İngilizce, Farsça, Arapça, Türkçe, Hintçe, İspanyolca, Almanca ve Fransızca — arayüz, rakamlar, tarihler ve yerleşim yönü.
 
-Katalogun tamamı — 5,402 beceri, tam metinleri ve arama dizini — uygulamanın içinde 17 MB’lık bir SQLite veritabanı olarak gelir. Okumak için hiçbir şey indirilmez.
+## Çevrimdışı nasıl kalıyor
 
-### Yazdığınız dili anlayan arama
+<p align="center">
+  <img src="../assets/readme/how-it-works.svg" width="100%" alt="Üç adım: bütün katalog indirilen dosyanın içinde gelir, ağ olmadan açılır ve sonraki açılışta doğrulanmış bir güncellemeyle değiştirilir">
+</p>
 
-Her başlık ve metin üzerinde tam metin arama; Farsça ve Arapça birlikte katlanır: Arapça ye ile yazılan bir sorgu, Farsça ye ile yazılmış metni bulur ve üç rakam kümesi tek sayılır.
-
-### Kopyalayın, yeniden yazmayın
-
-Her beceri kendi tam metnini, ait olduğu araç için kurulum yordamını ve her parçada bir kopyalama düğmesini taşır.
-
-### Gerçekten işe yaradı mı?
-
-Bir beceriyi kullandıktan sonraki tek dokunuş, kullandığınız model için işe yaradı mı, kısmen mi, yoksa yaramadı mı söyler. Beceriler buna göre sıralanır ve kişi başına sayılır; daha sık yanıtlamak hiçbir şeyi değiştirmez.
-
-### Skor tablosu olmayan bir topluluk
-
-Kendi becerilerinizi yayımlayın, işi size sürekli yarayan kişileri takip edin ve becerinin kendi sayfasında hangilerinin denediğini görün. Herkese açık takipçi sıralaması yok, grafiği listeleyen bir uç nokta da yok.
-
-### Sekiz dil, dördü sağdan sola
-
-İngilizce, Farsça, Arapça, Türkçe, Hintçe, İspanyolca, Almanca ve Fransızca — arayüz, rakamlar, tarihler ve yerleşim yönü.
-
-## İndir
-
-Telefonunuza uygun APK dosyasını [son sürümden](https://github.com/ehsanking/Skills-Ai/releases/latest) indirin. Son yılların çoğu telefonu **arm64-v8a** ister; daha eski veya uygun fiyatlı olanlar **armeabi-v7a**. `x86_64` emülatörler içindir.
-
-Yanlışını kurarsanız Android reddeder — bozuk bir şey kurmaz.
+- **İndirilenin içinde** — `skills.db`, 17 MB SQLite: gövdeleri sıkıştırılmış 5402 beceri, hepsinin üzerinde tam metin dizini ve 33 üçüncü taraf lisans metni tam olarak.
+- **İlk açılış** — Paketten bir kez çıkarılır ve salt okunur açılır. Ara, oku, kopyala — ağ yok, hesap yok, kayıt yok.
+- **Katalog büyüdüğünde** — Sunucu yeni bir derlem yayımlar. Uygulama indirir, sha256 değerini doğrular ve canlı dosyanın yanına koyar — üzerine değil — sonra bir sonraki açılışta değiştirir.
 
 ## Nasıl yapıldı
 
 | | |
 |---|---|
-| **Platform** | Android 8.0 and newer |
-| **Framework** | Flutter 3.44 / Dart 3.12 |
-| **Catalogue** | SQLite + FTS4, bodies compressed with zlib, 17 MB inside the APK |
-| **Backend** | Laravel 13 + Filament 5, at [ai.ehsanking.ir](https://ai.ehsanking.ir) |
+| **Android** | 8.0 and newer |
+| **Flutter** | 3.44 / Dart 3.12 |
+| **Catalogue** | SQLite + FTS4, bodies deflated, 17 MB inside the APK |
+| **Backend** | Laravel 13 + Filament 5, [ai.ehsanking.ir](https://ai.ehsanking.ir) |
 | **Package** | `gfly.skillsai.app` |
 | **Tools / skills** | 102 / 5,402 |
 
@@ -88,5 +110,3 @@ Uygulama tescillidir — bkz. [LICENSE](../LICENSE). Burada yayımlanan sürüml
 ## Geliştirici
 
 **Ehsan King** — [github.com/ehsanking](https://github.com/ehsanking)
-
-

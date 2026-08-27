@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 356" width="1200" height="356" role="img" aria-label="How Skills AI works: the whole catalogue ships inside the download, opens with no network, and is replaced by a verified update at a later launch">
+  <title>How Skills AI works: the whole catalogue ships inside the download, opens with no network, and is replaced by a verified update at a later launch</title>
+  <rect x="0.5" y="0.5" width="1199" height="355" rx="24" fill="#14161A" stroke="#F4F1EA" stroke-opacity="0.10"/>
+  <rect x="22" y="34" width="362.667" height="288" rx="18" fill="#1C1F25" stroke="#F4F1EA" stroke-opacity="0.10"/>
+  <circle cx="56" cy="76" r="17" fill="#C8F048" fill-opacity="0.16"/>
+  <text x="56" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#C8F048" text-anchor="middle">1</text>
+  <text x="86" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#F4F1EA" text-anchor="start" letter-spacing="1.1">IN THE DOWNLOAD</text>
+  <circle cx="48" cy="129" r="3.5" fill="#C8F048" fill-opacity="0.7"/>
+  <text x="66" y="136" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="start">skills.db, 17 MB of SQLite</text>
+  <circle cx="48" cy="171" r="3.5" fill="#C8F048" fill-opacity="0.7"/>
+  <text x="66" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="start">5,402 skills, bodies deflated</text>
+  <circle cx="48" cy="213" r="3.5" fill="#C8F048" fill-opacity="0.7"/>
+  <text x="66" y="220" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="start">a full-text index over them</text>
+  <circle cx="48" cy="255" r="3.5" fill="#C8F048" fill-opacity="0.7"/>
+  <text x="66" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="start">33 licence texts, in full</text>
+  <rect x="418.667" y="34" width="362.667" height="288" rx="18" fill="#1C1F25" stroke="#F4F1EA" stroke-opacity="0.10"/>
+  <circle cx="452.667" cy="76" r="17" fill="#C8F048" fill-opacity="0.16"/>
+  <text x="452.667" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#C8F048" text-anchor="middle">2</text>
+  <text x="482.667" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#F4F1EA" text-anchor="start" letter-spacing="1.1">FIRST LAUNCH</text>
+  <circle cx="444.667" cy="129" r="3.5" fill="#C8F048" fill-opacity="0.7"/>
+  <text x="462.667" y="136" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="start">copied out of the package</text>
+  <circle cx="444.667" cy="171" r="3.5" fill="#C8F048" fill-opacity="0.7"/>
+  <text x="462.667" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="start">opened read-only</text>
+  <circle cx="444.667" cy="213" r="3.5" fill="#C8F048" fill-opacity="0.7"/>
+  <text x="462.667" y="220" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="start">search, read, copy</text>
+  <circle cx="444.667" cy="255" r="3.5" fill="#C8F048" fill-opacity="0.7"/>
+  <text x="462.667" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="start">no network, no account</text>
+  <rect x="815.333" y="34" width="362.667" height="288" rx="18" fill="#1C1F25" stroke="#F4F1EA" stroke-opacity="0.10"/>
+  <circle cx="849.333" cy="76" r="17" fill="#5B3DF5" fill-opacity="0.16"/>
+  <text x="849.333" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#5B3DF5" text-anchor="middle">3</text>
+  <text x="879.333" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#F4F1EA" text-anchor="start" letter-spacing="1.1">WHEN IT GROWS</text>
+  <circle cx="841.333" cy="129" r="3.5" fill="#5B3DF5" fill-opacity="0.7"/>
+  <text x="859.333" y="136" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="start">the server publishes one</text>
+  <circle cx="841.333" cy="171" r="3.5" fill="#5B3DF5" fill-opacity="0.7"/>
+  <text x="859.333" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="start">sha256 verified before use</text>
+  <circle cx="841.333" cy="213" r="3.5" fill="#5B3DF5" fill-opacity="0.7"/>
+  <text x="859.333" y="220" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="start">staged, never written live</text>
+  <circle cx="841.333" cy="255" r="3.5" fill="#5B3DF5" fill-opacity="0.7"/>
+  <text x="859.333" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" fill="#9A9DA6" text-anchor="start">swapped in at next launch</text>
+  <path d="M 390.667 178 L 412.667 178 M 405.667 171 L 412.667 178 L 405.667 185" stroke="#F4F1EA" stroke-opacity="0.5" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 787.333 178 L 809.333 178 M 802.333 171 L 809.333 178 L 802.333 185" stroke="#F4F1EA" stroke-opacity="0.5" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
