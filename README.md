@@ -71,6 +71,14 @@ d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a  SkillsAI-1.0.0
 certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
 ```
 
+### iPhone and iPad
+
+There is no App Store build. Open it in Safari and add it to your home screen: it then launches full screen, with its own icon, and behaves like an app.
+
+[**ai.ehsanking.ir/app**](https://ai.ehsanking.ir/app)
+
+> Pages you have opened stay readable without a connection. The whole catalogue offline is what the Android and Windows builds carry.
+
 ## What it is
 
 Every AI tool answers better when you tell it how. A prompt that makes Claude stop apologising, a rule that keeps Cursor inside your conventions, a system message that gets Gemini to write Persian a native reader would actually write — those exist, scattered across hundreds of repositories, and finding the right one when you need it is the whole problem.

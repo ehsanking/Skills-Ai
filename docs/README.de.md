@@ -71,6 +71,14 @@ d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a  SkillsAI-1.0.0
 certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
 ```
 
+### iPhone und iPad
+
+Es gibt keine App-Store-Version. In Safari öffnen und zum Home-Bildschirm hinzufügen: dann startet es im Vollbild, mit eigenem Icon, und verhält sich wie eine App.
+
+[**ai.ehsanking.ir/app**](https://ai.ehsanking.ir/app)
+
+> Bereits geöffnete Seiten bleiben ohne Verbindung lesbar. Den ganzen Katalog offline tragen die Android- und Windows-Versionen.
+
 ## Was es ist
 
 Jedes KI-Werkzeug antwortet besser, wenn man ihm sagt wie. Ein Prompt, der Claude das ständige Entschuldigen abgewöhnt, eine Regel, die Cursor innerhalb deiner Konventionen hält, eine Systemnachricht, die Gemini dazu bringt, so zu schreiben wie eine Muttersprachlerin es täte — das gibt es, verstreut über Hunderte Repositories, und das richtige im richtigen Moment zu finden ist das ganze Problem.

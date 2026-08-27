@@ -71,6 +71,14 @@ d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a  SkillsAI-1.0.0
 certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
 ```
 
+### iPhone et iPad
+
+Il n’y a pas de version App Store. Ouvrez-le dans Safari et ajoutez-le à votre écran d’accueil : il s’ouvre alors en plein écran, avec sa propre icône, comme une app.
+
+[**ai.ehsanking.ir/app**](https://ai.ehsanking.ir/app)
+
+> Les pages déjà ouvertes restent lisibles sans connexion. Le catalogue entier hors ligne, c’est dans les versions Android et Windows.
+
 ## Ce que c'est
 
 Tout outil d'IA répond mieux quand on lui dit comment. Un prompt qui empêche Claude de s'excuser sans arrêt, une règle qui maintient Cursor dans vos conventions, un message système qui pousse Gemini à écrire ce qu’un locuteur natif écrirait vraiment — cela existe, éparpillé dans des centaines de dépôts, et trouver le bon au bon moment est tout le problème.

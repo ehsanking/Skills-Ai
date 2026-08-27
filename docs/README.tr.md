@@ -71,6 +71,14 @@ d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a  SkillsAI-1.0.0
 certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
 ```
 
+### iPhone ve iPad
+
+App Store sürümü yok. Safari’de açıp ana ekranınıza ekleyin: sonrasında kendi simgesiyle tam ekran açılır ve bir uygulama gibi davranır.
+
+[**ai.ehsanking.ir/app**](https://ai.ehsanking.ir/app)
+
+> Açtığınız sayfalar bağlantı olmadan da okunabilir kalır. Bütün katalog çevrimdışı olarak Android ve Windows sürümlerinde bulunur.
+
 ## Nedir
 
 Her yapay zeka aracı, nasıl yapacağını söylediğinizde daha iyi yanıt verir. Claude'un sürekli özür dilemesini kesen bir istem, Cursor'u kendi kurallarınızın içinde tutan bir kural, Gemini'ye anadili konuşanın gerçekten yazacağı metni yazdıran bir sistem mesajı — bunlar var, yüzlerce depoya dağılmış hâlde, ve ihtiyaç anında doğrusunu bulmak işin tamamı.
