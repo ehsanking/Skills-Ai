@@ -60,7 +60,7 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
   <img src="screenshots/05-windows.png" width="46%" alt="Der Windows-Build: derselbe Katalog, als Desktop-Fenster">
 </p>
 
-Windows wird sagen, es kenne den Herausgeber nicht. Diese Warnung ist zu erwarten: der Build ist nicht mit einem kostenpflichtigen Signaturzertifikat signiert. Statt Sie zu bitten, sie auf Vertrauen hin wegzuklicken, hier der SHA-256 der ZIP-Datei — prüfen Sie ihn gegen die Datei, die Sie geladen haben.
+Windows wird sagen, es kenne den Herausgeber nicht. Diese Warnung ist zu erwarten: der Build ist nicht mit einem kostenpflichtigen Signaturzertifikat signiert. Statt Sie zu bitten, sie auf Vertrauen hin wegzuklicken, hier der SHA-256 beider Dateien — prüfen Sie die, die Sie geladen haben.
 
 ```
 ab39330edf1630786a2c017af9fccf0ed5df8544cf505d90cd7f4f27d3b6a9e6  SkillsAI-1.0.0-windows-x64-setup.exe

@@ -60,7 +60,7 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
   <img src="screenshots/05-windows.png" width="46%" alt="Windows yapısı: aynı katalog, bir masaüstü penceresinde">
 </p>
 
-Windows yayıncıyı tanımadığını söyleyecek. Bu uyarı beklenen bir şey: yapı ücretli bir kod imzalama sertifikasıyla imzalanmadı. Sırf bana güvenip geçmenizi istemek yerine, zip dosyasının SHA-256 değeri burada — indirdiğiniz dosyayla karşılaştırın.
+Windows yayıncıyı tanımadığını söyleyecek. Bu uyarı beklenen bir şey: yapı ücretli bir kod imzalama sertifikasıyla imzalanmadı. Sırf bana güvenip geçmenizi istemek yerine, her iki dosyanın SHA-256 değeri burada — indirdiğinizi karşılaştırın.
 
 ```
 ab39330edf1630786a2c017af9fccf0ed5df8544cf505d90cd7f4f27d3b6a9e6  SkillsAI-1.0.0-windows-x64-setup.exe
