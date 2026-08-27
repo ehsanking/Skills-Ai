@@ -119,13 +119,21 @@ certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
 
 **أعلن معنا** — في التطبيق مساحتان إعلانيتان. التفاصيل في [صفحة الإعلانات والدعم](https://ai.ehsanking.ir/advertise).
 
-**تبرع** — USDT على شبكة TRON‏ (TRC-20):
+**تبرع** — USDT، على أي من هاتين الشبكتين. رسوم BEP-20 أقل عادة:
+
+**شبكة BNB · BEP-20**
+
+```
+0x53F494E1Fc1Ee777C55B49048dd1ab7e4C5d7244
+```
+
+**شبكة TRON · TRC-20**
 
 ```
 TKPswLQqd2e73UTGJ5prxVXBVo7MTsWedU
 ```
 
-> USDT · TRC-20 (TRON). Sending any other coin or using any other network will lose it.
+> USDT فقط، وعلى هاتين الشبكتين فقط. عملة أخرى أو شبكة أخرى لا ترتد — تضيع ببساطة.
 
 ## الترخيص
 

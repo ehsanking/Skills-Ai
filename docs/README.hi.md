@@ -117,13 +117,21 @@ Skills AI **102 टूल्स के लिए उनमें से 5,402** 
 
 **विज्ञापन दें** — ऐप में दो प्रायोजित स्लॉट हैं। विवरण [विज्ञापन और सहयोग पृष्ठ](https://ai.ehsanking.ir/advertise) पर।
 
-**दान करें** — TRON नेटवर्क पर USDT (TRC-20):
+**दान करें** — USDT, इन दो नेटवर्क में से किसी पर भी। BEP-20 भेजना आम तौर पर सस्ता पड़ता है:
+
+**BEP-20 · BNB Smart Chain**
+
+```
+0x53F494E1Fc1Ee777C55B49048dd1ab7e4C5d7244
+```
+
+**TRC-20 · TRON**
 
 ```
 TKPswLQqd2e73UTGJ5prxVXBVo7MTsWedU
 ```
 
-> USDT · TRC-20 (TRON). Sending any other coin or using any other network will lose it.
+> सिर्फ़ USDT, और सिर्फ़ इन्हीं दो नेटवर्क पर। कोई दूसरा कॉइन या दूसरा नेटवर्क वापस नहीं आता — वह बस खो जाता है।
 
 ## लाइसेंस
 

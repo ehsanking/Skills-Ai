@@ -117,13 +117,21 @@ Uygulamadaki her şey ücretsiz — her beceri, topluluk, arama ve çevrimdış�
 
 **Reklam verin** — uygulamada iki sponsorlu alan var. Ayrıntılar [Reklam ve Destek sayfasında](https://ai.ehsanking.ir/advertise).
 
-**Bağış** — TRON ağında USDT (TRC-20):
+**Bağış** — USDT, bu iki ağdan biri üzerinden. BEP-20 genelde daha ucuza gönderilir:
+
+**BEP-20 · BNB Smart Chain**
+
+```
+0x53F494E1Fc1Ee777C55B49048dd1ab7e4C5d7244
+```
+
+**TRC-20 · TRON**
 
 ```
 TKPswLQqd2e73UTGJ5prxVXBVo7MTsWedU
 ```
 
-> USDT · TRC-20 (TRON). Sending any other coin or using any other network will lose it.
+> Yalnızca USDT ve yalnızca bu iki ağ. Başka bir coin ya da başka bir ağ geri dönmez — sadece kaybolur.
 
 ## Lisans
 

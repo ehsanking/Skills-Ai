@@ -117,13 +117,21 @@ Todo en la app es gratis — cada habilidad, la comunidad, la búsqueda y la cop
 
 **Anúnciate** — la app tiene dos espacios patrocinados. Detalles en la [página de Publicidad y Apoyo](https://ai.ehsanking.ir/advertise).
 
-**Dona** — USDT en la red TRON (TRC-20):
+**Dona** — USDT, en cualquiera de estas dos redes. BEP-20 suele costar menos:
+
+**BEP-20 · BNB Smart Chain**
+
+```
+0x53F494E1Fc1Ee777C55B49048dd1ab7e4C5d7244
+```
+
+**TRC-20 · TRON**
 
 ```
 TKPswLQqd2e73UTGJ5prxVXBVo7MTsWedU
 ```
 
-> USDT · TRC-20 (TRON). Sending any other coin or using any other network will lose it.
+> Solo USDT, y solo en estas dos redes. Otra moneda, u otra red, no rebota: simplemente se pierde.
 
 ## Licencia
 

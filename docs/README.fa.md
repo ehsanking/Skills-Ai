@@ -119,13 +119,21 @@ certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
 
 **تبلیغات** — اپ دو جایگاه تبلیغاتی دارد. جزئیات در [صفحه‌ی تبلیغات و حمایت](https://ai.ehsanking.ir/advertise).
 
-**کمک مالی** — تتر روی شبکه‌ی ترون (TRC-20):
+**کمک مالی** — تتر، روی هر کدام از این دو شبکه. کارمزد BEP-20 معمولا کمتر است:
+
+**شبکه بی‌ان‌بی · BEP-20**
+
+```
+0x53F494E1Fc1Ee777C55B49048dd1ab7e4C5d7244
+```
+
+**شبکه ترون · TRC-20**
 
 ```
 TKPswLQqd2e73UTGJ5prxVXBVo7MTsWedU
 ```
 
-> USDT · TRC-20 (TRON). Sending any other coin or using any other network will lose it.
+> فقط تتر (USDT)، و فقط روی همین دو شبکه. ارز دیگر یا شبکه دیگر برنمی‌گردد — به‌سادگی از بین می‌رود.
 
 ## مجوز
 
