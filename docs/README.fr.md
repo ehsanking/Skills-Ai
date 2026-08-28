@@ -53,8 +53,8 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 
 | Fichier | Pour |
 |---|---|
-| [`SkillsAI-1.0.0-windows-x64-setup.exe`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64-setup.exe) — 23 MB | **Programme d’installation.** S’installe dans votre propre dossier utilisateur : aucune demande d’administrateur, rien d’écrit en dehors de votre compte. Ajoute une entrée au menu Démarrer et un vrai programme de désinstallation. |
-| [`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB | **Zip portable.** Une version portable. Décompressez-la où vous voulez et lancez `SkillsAI.exe` : rien n’est installé, rien n’est écrit dans le registre, et le catalogue est extrait dans `%APPDATA%\Skills AI` au premier lancement. Windows 10 (1809) et plus, 64 bits. Pour l’enlever, supprimez le dossier. |
+| [`SkillsAI-windows-x64-setup.exe`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-windows-x64-setup.exe) — 23 MB | **Programme d’installation.** S’installe dans votre propre dossier utilisateur : aucune demande d’administrateur, rien d’écrit en dehors de votre compte. Ajoute une entrée au menu Démarrer et un vrai programme de désinstallation. |
+| [`SkillsAI-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-windows-x64.zip) — 26 MB | **Zip portable.** Une version portable. Décompressez-la où vous voulez et lancez `SkillsAI.exe` : rien n’est installé, rien n’est écrit dans le registre, et le catalogue est extrait dans `%APPDATA%\Skills AI` au premier lancement. Windows 10 (1809) et plus, 64 bits. Pour l’enlever, supprimez le dossier. |
 
 <p align="center">
   <img src="screenshots/05-windows.png" width="46%" alt="La version Windows : le même catalogue, dans une fenêtre de bureau">
@@ -63,12 +63,12 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 Windows dira qu’il ne reconnaît pas l’éditeur. Cet avertissement est normal : la version n’est pas signée avec un certificat de signature de code payant. Plutôt que de vous demander de passer outre sur parole, voici le SHA-256 des deux fichiers — vérifiez celui que vous avez téléchargé.
 
 ```
-ab39330edf1630786a2c017af9fccf0ed5df8544cf505d90cd7f4f27d3b6a9e6  SkillsAI-1.0.0-windows-x64-setup.exe
-d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a  SkillsAI-1.0.0-windows-x64.zip
+3fc2f1d3d222c6ba4b548b09884ed6d8dde9f609dc7f9a9394acfad5d45d0be1  SkillsAI-windows-x64-setup.exe
+65b07b4d23503a7f613577d421d882a9b5625ea76aa4638d561f039491d644fa  SkillsAI-windows-x64.zip
 ```
 
 ```
-certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
+certutil -hashfile SkillsAI-windows-x64-setup.exe SHA256
 ```
 
 ### iPhone et iPad
@@ -92,7 +92,50 @@ Skills AI en rassemble **5,402 pour 102 outils**, les range en 12 catégories et
 - **Copiez, ne retapez pas** — Chaque compétence porte son texte exact, la procédure d'installation pour l'outil auquel elle appartient, et un bouton de copie sur chaque partie.
 - **Est-ce que ça a vraiment marché ?** — Une pression après avoir utilisé une compétence dit si elle a marché, en partie, ou pas — pour le modèle que vous avez utilisé. Les compétences sont classées là-dessus, compté par personne, donc répondre plus souvent ne déplace rien.
 - **Une communauté, sans tableau des scores** — Publiez vos propres compétences, suivez les personnes dont le travail vous sert régulièrement, et voyez sur la compétence elle-même qui parmi elles l’a essayée. Il n’y a aucun classement public d’abonnés et aucun point d’accès qui liste le graphe.
+- **Vendez ce que vous écrivez, si vous voulez** — Le catalogue est gratuit et le restera. Celui qui publie ses propres compétences, outils ou greffons peut leur donner un prix : l’acheteur paie en cryptomonnaie, le vendeur est payé en USDT, et la plateforme garde 12 %. Depuis la 1.1.0, le côté vendeur est dans l’application même — un écran **Gagner**, avec votre solde, votre portefeuille, vos paiements et le prix de chaque annonce. Rien de ce que vous publiez n’a de prix tant que vous ne lui en donnez pas un.
 - **Huit langues, dont quatre de droite à gauche** — Anglais, persan, arabe, turc, hindi, espagnol, allemand et français — l'interface, les chiffres, les dates et le sens de la mise en page.
+
+## Vendre son travail
+
+Tout ce qui arrive avec l'application est gratuit et le restera. À côté, il y a
+une place de marché : celui qui publie son propre travail peut lui donner un
+prix.
+
+| | |
+|---|---|
+| **Vous gardez** | 88 % de chaque vente |
+| **Nous gardons** | 12 %, et rien d'autre — pas de frais de mise en ligne, pas d'abonnement, pas de frais de retrait |
+| **Prix** | en dollars, de 1,00 à 999,00, fixé par vous |
+| **L'acheteur paie** | en cryptomonnaie, via NOWPayments |
+| **Vous êtes payé** | en USDT, sur BEP-20 ou TRC-20 |
+| **Retrait minimum** | 20,00 dollars |
+| **Blocage** | 14 jours avant qu'une vente puisse être retirée |
+
+Le blocage n'est pas une astuce de trésorerie. Les conditions du vendeur
+promettent que si une annonce se révèle être une arnaque, viole le droit
+d'auteur de quelqu'un ou fait l'objet d'une demande juridique sérieuse,
+**l'argent est gelé, rendu à l'acheteur et le compte professionnel est
+fermé** — et cette promesse ne tient que tant que l'argent est encore ici. De
+l'USDT parti vers un portefeuille est parti.
+
+**L'application encaisse ; elle n'achète pas.** Depuis la 1.1.0, tout le côté
+vendeur est un écran dans l'application : activer le compte professionnel,
+renseigner le portefeuille USDT, quatre chiffres qui veulent dire quatre choses
+différentes, demander un paiement et fixer le prix de ses propres annonces.
+L'achat d'une annonce payante se fait dans le navigateur, et c'est une décision
+et non un oubli : vendre des biens numériques à l'intérieur d'une application
+Android est exactement ce que couvrent les règles de paiement de Cafe Bazaar et
+de Myket. Être payé n'est pas un achat fait par la personne qui tient le
+téléphone.
+
+Changer le portefeuille de paiement envoie une notification au compte concerné :
+dans l'application, dans l'application web et par courriel. Une adresse que
+vous n'avez pas saisie se découvre au moment où elle est saisie, pas au moment
+où un paiement manque.
+
+Les conditions complètes sont sur le [site](https://ai.ehsanking.ir/terms#seller),
+dans les huit langues, et une page explique l'ensemble sur
+[ai.ehsanking.ir/earn](https://ai.ehsanking.ir/earn).
 
 ## Comment il reste hors ligne
 
