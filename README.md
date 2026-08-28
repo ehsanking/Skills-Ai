@@ -92,7 +92,46 @@ Skills AI collects **5,402 of them for 102 tools**, sorts them into 12 categorie
 - **Copy, do not retype** — Every skill carries its exact text, an install procedure for the tool it belongs to, and a copy button on each part.
 - **Did it actually work?** — One tap after you use a skill says whether it worked, partly worked, or did not — for the model you used. Skills are ranked by that, counted per person, so answering more often moves nothing.
 - **A community, without a scoreboard** — Publish your own skills, follow the people whose work keeps helping you, and see on a skill itself which of them tried it. There is no public follower ranking and no endpoint that lists the graph.
+- **Sell what you write, if you want to** — The catalogue itself is free and stays free. What is new is that anyone publishing their own skills, tools or plugins can put a price on them: buyers pay in cryptocurrency, sellers are paid in USDT, and the platform keeps 12%. Nothing you publish is priced unless you price it.
 - **Eight languages, four of them right-to-left** — English, Persian, Arabic, Turkish, Hindi, Spanish, German and French — the interface, the numerals, the dates and the direction of the layout.
+
+## Selling your work
+
+Everything in the shipped catalogue is free. Alongside it there is a
+marketplace where the people who publish their own work can charge for it.
+
+| | |
+|---|---|
+| **You keep** | 88% of every sale |
+| **We keep** | 12%, and nothing else — no listing fee, no monthly fee, no payout fee |
+| **Prices** | US dollars, $1.00 to $999.00, set by you |
+| **Buyers pay** | in cryptocurrency, through NOWPayments |
+| **You are paid** | in USDT, on BEP-20 or TRC-20 |
+| **Smallest payout** | $20.00 |
+| **Hold** | 14 days before a sale can be withdrawn |
+
+The hold is not a cash-flow trick. The seller terms promise that if a listing
+turns out to be a scam, to infringe somebody's copyright, or to be the subject
+of a credible legal demand, **the money is frozen, returned to the buyer, and
+the business account is closed** — and that promise is only keepable while the
+money is still here. Once USDT has left for a wallet it is gone.
+
+Two things are worth saying about how it is built, because they are the parts
+that are easy to get wrong:
+
+**The paywall is in the endpoint, not the view.** A priced listing's body and
+install text are returned as empty strings by the API to anybody who has not
+bought it. A paywall that hides text with CSS is one that a glance at the page
+source walks straight through.
+
+**A buyer keeps what they bought, permanently.** Access is its own record, not
+a status on an order, so it survives the seller changing the price,
+unpublishing the listing, being banned, or leaving. It is withdrawn in exactly
+one case: the purchase is refunded.
+
+The full terms are on the [site](https://ai.ehsanking.ir/terms#seller), in all
+eight languages, and there is a page explaining the whole thing at
+[ai.ehsanking.ir/earn](https://ai.ehsanking.ir/earn).
 
 ## How it stays offline
 
@@ -121,7 +160,7 @@ The catalogue works with no account and no network. No advertising identifier, n
 
 ## Support
 
-Everything in the app is free — every skill, the community, the search and the offline copy — with no paid tier, no subscription and nothing held back behind an account. What keeps it running is advertising and donations, and both go to the same place: servers, storage, bandwidth and the work of making it better.
+The catalogue is free — every skill that ships with the app, the community, the search and the offline copy — with no paid tier and no subscription. The one thing that can cost money is a listing an individual author has chosen to price, and that is their sale, not ours; see [Selling your work](#selling-your-work). What keeps the rest running is advertising and donations, and both go to the same place: servers, storage, bandwidth and the work of making it better.
 
 **Advertise** — the app has two sponsored slots. Details on the [Advertising & Support page](https://ai.ehsanking.ir/advertise).
 
