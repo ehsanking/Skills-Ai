@@ -53,8 +53,8 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 
 | Archivo | Para |
 |---|---|
-| [`SkillsAI-1.0.0-windows-x64-setup.exe`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64-setup.exe) — 23 MB | **Instalador.** Se instala en tu propia carpeta de usuario: sin petición de administrador y sin escribir nada fuera de tu cuenta. Añade una entrada en el menú Inicio y un desinstalador de verdad. |
-| [`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB | **Zip portátil.** Una compilación portátil. Descomprímela donde quieras y ejecuta `SkillsAI.exe`: no se instala nada, no se escribe nada en el registro y el catálogo se descomprime en `%APPDATA%\Skills AI` la primera vez que se abre. Windows 10 (1809) o posterior, 64 bits. Para quitarlo, borra la carpeta. |
+| [`SkillsAI-windows-x64-setup.exe`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-windows-x64-setup.exe) — 23 MB | **Instalador.** Se instala en tu propia carpeta de usuario: sin petición de administrador y sin escribir nada fuera de tu cuenta. Añade una entrada en el menú Inicio y un desinstalador de verdad. |
+| [`SkillsAI-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-windows-x64.zip) — 26 MB | **Zip portátil.** Una compilación portátil. Descomprímela donde quieras y ejecuta `SkillsAI.exe`: no se instala nada, no se escribe nada en el registro y el catálogo se descomprime en `%APPDATA%\Skills AI` la primera vez que se abre. Windows 10 (1809) o posterior, 64 bits. Para quitarlo, borra la carpeta. |
 
 <p align="center">
   <img src="screenshots/05-windows.png" width="46%" alt="La compilación de Windows: el mismo catálogo, en una ventana de escritorio">
@@ -63,12 +63,12 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 Windows dirá que no reconoce al editor. Esa advertencia es esperable: la compilación no está firmada con un certificado de firma de código de pago. En lugar de pedirte que la saltes por confianza, aquí está el SHA-256 de ambos archivos: comprueba el que descargaste.
 
 ```
-ab39330edf1630786a2c017af9fccf0ed5df8544cf505d90cd7f4f27d3b6a9e6  SkillsAI-1.0.0-windows-x64-setup.exe
-d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a  SkillsAI-1.0.0-windows-x64.zip
+3fc2f1d3d222c6ba4b548b09884ed6d8dde9f609dc7f9a9394acfad5d45d0be1  SkillsAI-windows-x64-setup.exe
+65b07b4d23503a7f613577d421d882a9b5625ea76aa4638d561f039491d644fa  SkillsAI-windows-x64.zip
 ```
 
 ```
-certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
+certutil -hashfile SkillsAI-windows-x64-setup.exe SHA256
 ```
 
 ### iPhone y iPad
@@ -92,7 +92,47 @@ Skills AI reúne **5,402 de ellos para 102 herramientas**, los ordena en 12 cate
 - **Copia, no vuelvas a escribir** — Cada habilidad lleva su texto exacto, el procedimiento de instalación de la herramienta a la que pertenece y un botón de copiar en cada parte.
 - **¿Funcionó de verdad?** — Un toque después de usar una habilidad dice si funcionó, funcionó en parte o no funcionó — para el modelo que usaste. Las habilidades se ordenan por eso, contado por persona, así que responder más veces no mueve nada.
 - **Una comunidad, sin marcador** — Publica tus propias habilidades, sigue a quienes te ayudan una y otra vez, y ve en la propia habilidad quién de ellos la probó. No hay ranking público de seguidores ni endpoint que liste el grafo.
+- **Vende lo que escribes, si quieres** — El catálogo es gratis y lo seguirá siendo. Quien publica sus propias habilidades, herramientas o complementos puede ponerles precio: el comprador paga en criptomoneda, al vendedor se le paga en USDT y la plataforma se queda el 12%. Desde la 1.1.0 el lado del vendedor está en la propia aplicación: una pantalla **Ganar**, con tu saldo, tu cartera, tus pagos y el precio de cada anuncio. Nada de lo que publiques tiene precio salvo que se lo pongas tú.
 - **Ocho idiomas, cuatro de derecha a izquierda** — Inglés, persa, árabe, turco, hindi, español, alemán y francés — la interfaz, los números, las fechas y la dirección del diseño.
+
+## Vender tu trabajo
+
+Todo lo que viene con la aplicación es gratis y lo seguirá siendo. Junto a eso
+hay un mercado donde quien publica su propio trabajo puede ponerle precio.
+
+| | |
+|---|---|
+| **Te quedas con** | el 88% de cada venta |
+| **Nos quedamos con** | el 12%, y nada más: sin cuota de publicación, sin cuota mensual, sin comisión de retiro |
+| **Precio** | en dólares, de 1,00 a 999,00, lo pones tú |
+| **El comprador paga** | en criptomoneda, a través de NOWPayments |
+| **A ti se te paga** | en USDT, por BEP-20 o TRC-20 |
+| **Retiro mínimo** | 20,00 dólares |
+| **Retención** | 14 días antes de poder retirar una venta |
+
+La retención no es un truco de caja. Las condiciones del vendedor prometen que
+si un anuncio resulta ser una estafa, infringe los derechos de autor de alguien
+o es objeto de una reclamación legal creíble, **el dinero se congela, se
+devuelve al comprador y se cierra la cuenta comercial**, y esa promesa solo se
+puede cumplir mientras el dinero siga aquí. El USDT que ya salió hacia una
+cartera se fue.
+
+**La aplicación cobra; no compra.** Desde la 1.1.0 el lado del vendedor es una
+pantalla dentro de la aplicación: activar la cuenta comercial, indicar la
+cartera USDT, cuatro cifras que significan cuatro cosas distintas, pedir el
+pago y poner precio a tus propios anuncios. Comprar un anuncio de pago ocurre
+en el navegador, y eso es una decisión y no un olvido: vender bienes digitales
+dentro de una compilación de Android es justo lo que cubren las reglas de pago
+de Cafe Bazaar y Myket. Cobrar no es una compra hecha por quien sostiene el
+teléfono.
+
+Cambiar la cartera de cobro envía un aviso a la cuenta a la que pertenece: en
+la aplicación, en la web y por correo. Una dirección que tú no pusiste se
+descubre en el momento en que se pone, no cuando falta un pago.
+
+Las condiciones completas están en el [sitio](https://ai.ehsanking.ir/terms#seller),
+en los ocho idiomas, y hay una página que lo explica todo en
+[ai.ehsanking.ir/earn](https://ai.ehsanking.ir/earn).
 
 ## Cómo se mantiene sin conexión
 
