@@ -53,8 +53,8 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 
 | File | For |
 |---|---|
-| [`SkillsAI-1.0.0-windows-x64-setup.exe`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64-setup.exe) — 23 MB | **Installer.** Installs into your own user folder — no administrator prompt, nothing written outside your account. Adds a Start Menu entry and a proper uninstaller. |
-| [`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB | **Portable zip.** A portable build. Unzip it anywhere and run `SkillsAI.exe` — nothing is installed, nothing is written to the registry, and the catalogue is unpacked into `%APPDATA%\Skills AI` the first time it opens. Windows 10 (1809) and newer, 64-bit. To remove it, delete the folder. |
+| [`SkillsAI-windows-x64-setup.exe`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-windows-x64-setup.exe) — 23 MB | **Installer.** Installs into your own user folder — no administrator prompt, nothing written outside your account. Adds a Start Menu entry and a proper uninstaller. |
+| [`SkillsAI-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-windows-x64.zip) — 26 MB | **Portable zip.** A portable build. Unzip it anywhere and run `SkillsAI.exe` — nothing is installed, nothing is written to the registry, and the catalogue is unpacked into `%APPDATA%\Skills AI` the first time it opens. Windows 10 (1809) and newer, 64-bit. To remove it, delete the folder. |
 
 <p align="center">
   <img src="docs/screenshots/05-windows.png" width="46%" alt="The Windows build: the same catalogue, running as a desktop window">
@@ -63,12 +63,12 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 Windows will say it does not recognise the publisher. That warning is expected: the build is not signed with a paid code-signing certificate. Rather than asking you to click past it on trust, here is the SHA-256 of both files — check the one you downloaded.
 
 ```
-ab39330edf1630786a2c017af9fccf0ed5df8544cf505d90cd7f4f27d3b6a9e6  SkillsAI-1.0.0-windows-x64-setup.exe
-d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a  SkillsAI-1.0.0-windows-x64.zip
+3fc2f1d3d222c6ba4b548b09884ed6d8dde9f609dc7f9a9394acfad5d45d0be1  SkillsAI-windows-x64-setup.exe
+65b07b4d23503a7f613577d421d882a9b5625ea76aa4638d561f039491d644fa  SkillsAI-windows-x64.zip
 ```
 
 ```
-certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
+certutil -hashfile SkillsAI-windows-x64-setup.exe SHA256
 ```
 
 ### iPhone and iPad
@@ -92,7 +92,7 @@ Skills AI collects **5,402 of them for 102 tools**, sorts them into 12 categorie
 - **Copy, do not retype** — Every skill carries its exact text, an install procedure for the tool it belongs to, and a copy button on each part.
 - **Did it actually work?** — One tap after you use a skill says whether it worked, partly worked, or did not — for the model you used. Skills are ranked by that, counted per person, so answering more often moves nothing.
 - **A community, without a scoreboard** — Publish your own skills, follow the people whose work keeps helping you, and see on a skill itself which of them tried it. There is no public follower ranking and no endpoint that lists the graph.
-- **Sell what you write, if you want to** — The catalogue itself is free and stays free. What is new is that anyone publishing their own skills, tools or plugins can put a price on them: buyers pay in cryptocurrency, sellers are paid in USDT, and the platform keeps 12%. Nothing you publish is priced unless you price it.
+- **Sell what you write, if you want to** — The catalogue itself is free and stays free. Anyone publishing their own skills, tools or plugins can put a price on them: buyers pay in cryptocurrency, sellers are paid in USDT, and the platform keeps 12%. Since 1.1.0 the seller side is in the app itself — an **Earn** screen with your balance, your wallet, your payouts and a price on each of your listings. Nothing you publish is priced unless you price it.
 - **Eight languages, four of them right-to-left** — English, Persian, Arabic, Turkish, Hindi, Spanish, German and French — the interface, the numerals, the dates and the direction of the layout.
 
 ## Selling your work
@@ -128,6 +128,19 @@ source walks straight through.
 a status on an order, so it survives the seller changing the price,
 unpublishing the listing, being banned, or leaving. It is withdrawn in exactly
 one case: the purchase is refunded.
+
+**The app earns; it does not buy.** From 1.1.0 the seller side is a screen in
+the app — turn on a business account, set the USDT wallet, watch four figures
+that mean four different things, ask to be paid, and price your own listings.
+Buying a paid listing happens in the browser, and that is a decision rather
+than an omission: selling digital goods inside an Android build is exactly what
+Cafe Bazaar's and Myket's billing rules cover, and a checkout in the APK is
+what gets a listing pulled. Being paid is not a purchase by the person holding
+the phone.
+
+Changing the payout wallet sends a notification to the account it belongs to —
+in the app, on the web app and by email. An address you did not set is
+something you find out about when it is set, not when a payout goes missing.
 
 The full terms are on the [site](https://ai.ehsanking.ir/terms#seller), in all
 eight languages, and there is a page explaining the whole thing at
