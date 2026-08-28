@@ -53,8 +53,8 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 
 | Dosya | Şunun için |
 |---|---|
-| [`SkillsAI-1.0.0-windows-x64-setup.exe`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64-setup.exe) — 23 MB | **Kurulum.** Kendi kullanıcı klasörünüze kurulur — yönetici izni istemez, hesabınızın dışına hiçbir şey yazmaz. Başlat menüsüne bir kısayol ve düzgün bir kaldırıcı ekler. |
-| [`SkillsAI-1.0.0-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-1.0.0-windows-x64.zip) — 26 MB | **Taşınabilir zip.** Taşınabilir bir yapı. Nereye isterseniz açın ve `SkillsAI.exe` dosyasını çalıştırın — hiçbir şey kurulmaz, kayıt defterine bir şey yazılmaz ve katalog ilk açılışta `%APPDATA%\Skills AI` içine çıkarılır. Windows 10 (1809) ve üzeri, 64 bit. Kaldırmak için klasörü silin. |
+| [`SkillsAI-windows-x64-setup.exe`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-windows-x64-setup.exe) — 23 MB | **Kurulum.** Kendi kullanıcı klasörünüze kurulur — yönetici izni istemez, hesabınızın dışına hiçbir şey yazmaz. Başlat menüsüne bir kısayol ve düzgün bir kaldırıcı ekler. |
+| [`SkillsAI-windows-x64.zip`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI-windows-x64.zip) — 26 MB | **Taşınabilir zip.** Taşınabilir bir yapı. Nereye isterseniz açın ve `SkillsAI.exe` dosyasını çalıştırın — hiçbir şey kurulmaz, kayıt defterine bir şey yazılmaz ve katalog ilk açılışta `%APPDATA%\Skills AI` içine çıkarılır. Windows 10 (1809) ve üzeri, 64 bit. Kaldırmak için klasörü silin. |
 
 <p align="center">
   <img src="screenshots/05-windows.png" width="46%" alt="Windows yapısı: aynı katalog, bir masaüstü penceresinde">
@@ -63,12 +63,12 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 Windows yayıncıyı tanımadığını söyleyecek. Bu uyarı beklenen bir şey: yapı ücretli bir kod imzalama sertifikasıyla imzalanmadı. Sırf bana güvenip geçmenizi istemek yerine, her iki dosyanın SHA-256 değeri burada — indirdiğinizi karşılaştırın.
 
 ```
-ab39330edf1630786a2c017af9fccf0ed5df8544cf505d90cd7f4f27d3b6a9e6  SkillsAI-1.0.0-windows-x64-setup.exe
-d7a72df9b944f16d040d2652ac5c9c4c673a4189b064b22bded2fddae1c3740a  SkillsAI-1.0.0-windows-x64.zip
+3fc2f1d3d222c6ba4b548b09884ed6d8dde9f609dc7f9a9394acfad5d45d0be1  SkillsAI-windows-x64-setup.exe
+65b07b4d23503a7f613577d421d882a9b5625ea76aa4638d561f039491d644fa  SkillsAI-windows-x64.zip
 ```
 
 ```
-certutil -hashfile SkillsAI-1.0.0-windows-x64-setup.exe SHA256
+certutil -hashfile SkillsAI-windows-x64-setup.exe SHA256
 ```
 
 ### iPhone ve iPad
@@ -92,7 +92,45 @@ Skills AI bunlardan **102 araç için 5,402 tanesini** topluyor, 12 kategoriye a
 - **Kopyalayın, yeniden yazmayın** — Her beceri kendi tam metnini, ait olduğu araç için kurulum yordamını ve her parçada bir kopyalama düğmesini taşır.
 - **Gerçekten işe yaradı mı?** — Bir beceriyi kullandıktan sonraki tek dokunuş, kullandığınız model için işe yaradı mı, kısmen mi, yoksa yaramadı mı söyler. Beceriler buna göre sıralanır ve kişi başına sayılır; daha sık yanıtlamak hiçbir şeyi değiştirmez.
 - **Skor tablosu olmayan bir topluluk** — Kendi becerilerinizi yayımlayın, işi size sürekli yarayan kişileri takip edin ve becerinin kendi sayfasında hangilerinin denediğini görün. Herkese açık takipçi sıralaması yok, grafiği listeleyen bir uç nokta da yok.
+- **İsterseniz işinizi satın** — Kataloğun kendisi ücretsizdir ve öyle kalır. Kendi becerilerini, araçlarını ya da eklentilerini yayımlayan herkes onlara fiyat koyabilir: alıcı kripto parayla öder, satıcıya USDT ödenir, platformun payı %12. 1.1.0’dan itibaren satıcı tarafı uygulamanın içinde — bakiyeniz, cüzdanınız, ödemeleriniz ve her ilanın fiyatıyla bir **Kazanç** ekranı. Siz fiyat koymadıkça yayımladığınız hiçbir şey ücretli olmaz.
 - **Sekiz dil, dördü sağdan sola** — İngilizce, Farsça, Arapça, Türkçe, Hintçe, İspanyolca, Almanca ve Fransızca — arayüz, rakamlar, tarihler ve yerleşim yönü.
+
+## Kendi işinizi satmak
+
+Uygulamayla gelen her şey ücretsizdir ve öyle kalır. Yanı sıra, kendi işini
+yayımlayan herkesin ona bir fiyat koyabildiği bir pazar yeri var.
+
+| | |
+|---|---|
+| **Size kalan** | Her satışın %88'i |
+| **Bize kalan** | %12 ve başka hiçbir şey — listeleme ücreti yok, aylık ücret yok, ödeme ücreti yok |
+| **Fiyat** | ABD doları, 1,00 – 999,00, siz belirlersiniz |
+| **Alıcı öder** | Kripto parayla, NOWPayments üzerinden |
+| **Size ödenir** | USDT, BEP-20 veya TRC-20 üzerinden |
+| **En düşük ödeme** | 20,00 dolar |
+| **Bekleme** | Bir satışın çekilebilmesi için 14 gün |
+
+Bekleme süresi bir nakit akışı oyunu değil. Satıcı koşulları şunu taahhüt eder:
+bir ilan dolandırıcılık çıkarsa, birinin telif hakkını ihlal ederse ya da ciddi
+bir hukuki talebin konusu olursa, **para dondurulur, alıcıya iade edilir ve
+ticari hesap kapatılır** — ve bu söz yalnızca para hâlâ buradayken tutulabilir.
+Bir cüzdana gitmiş USDT gitmiştir.
+
+**Uygulama para kazanır, ama satın almaz.** 1.1.0'dan itibaren satıcı tarafı
+uygulamanın içinde bir ekran: ticari hesabı açmak, USDT cüzdanını girmek, dört
+farklı şeyi anlatan dört rakam, ödeme talebi ve kendi ilanlarınızı
+fiyatlandırmak. Ücretli bir ilanı satın almak tarayıcıda olur; bu bir eksiklik
+değil, bir karar: dijital ürünleri bir Android yapısının içinde satmak tam da
+Cafe Bazaar ile Myket'in ödeme kurallarının konusudur. Para almak, telefonu
+tutan kişinin satın alması değildir.
+
+Ödeme cüzdanının değişmesi, ait olduğu hesaba bildirim gönderir — uygulamada,
+web uygulamasında ve e-postayla. Sizin girmediğiniz bir adresi, bir ödeme
+kaybolduğunda değil, girildiği anda öğrenirsiniz.
+
+Koşulların tamamı sekiz dilde [sitede](https://ai.ehsanking.ir/terms#seller), ve
+her şeyi anlatan bir sayfa da
+[ai.ehsanking.ir/earn](https://ai.ehsanking.ir/earn) adresinde.
 
 ## Çevrimdışı nasıl kalıyor
 
