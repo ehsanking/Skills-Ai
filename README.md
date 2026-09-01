@@ -29,24 +29,26 @@ A directory of AI tools and the skills that make them better at your work — of
 
 | File | For |
 |---|---|
-| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-arm64-v8a-release.apk) | Most phones — anything made in roughly the last eight years. **Start here.** |
-| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-armeabi-v7a-release.apk) | Older or entry-level phones, 32-bit. |
-| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-x86_64-release.apk) | Emulators, and the handful of x86 tablets. |
+| [`SkillsAI.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI.apk) — 64 MB | Every Android phone: arm64, 32-bit ARM and x86 in one file. Android 8.0 and newer. |
 
-Pick the wrong one and Android refuses to install it rather than installing something broken — so trying `arm64-v8a` first costs nothing.
+One file for every phone, so there is nothing to choose.
 
 **Checking what you downloaded**
 
 Every APK here is signed with the same key, and you can check that before you install anything:
 
 ```
-apksigner verify --print-certs app-arm64-v8a-release.apk
+apksigner verify --print-certs SkillsAI.apk
 ```
 
 The certificate should read `CN=Ehsan King, OU=Skills AI` with this SHA-256 fingerprint. A build that does not show it did not come from here.
 
 ```
 DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
+
+```
+31741a970b79658b1288378f6214072c986b06331e6d9bb07332bba459aa56a4  SkillsAI.apk
 ```
 
 ### Windows
@@ -63,8 +65,8 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 Windows will say it does not recognise the publisher. That warning is expected: the build is not signed with a paid code-signing certificate. Rather than asking you to click past it on trust, here is the SHA-256 of both files — check the one you downloaded.
 
 ```
-3fc2f1d3d222c6ba4b548b09884ed6d8dde9f609dc7f9a9394acfad5d45d0be1  SkillsAI-windows-x64-setup.exe
-65b07b4d23503a7f613577d421d882a9b5625ea76aa4638d561f039491d644fa  SkillsAI-windows-x64.zip
+f5bf42a59cb6b2d571fc0c5b3e965eca40399e00a458f38d523378202a336a74  SkillsAI-windows-x64-setup.exe
+c153b1172534189166a5e577804d459e79ee282d2b79d7844196e6ccee5e9851  SkillsAI-windows-x64.zip
 ```
 
 ```
@@ -92,59 +94,7 @@ Skills AI collects **5,402 of them for 102 tools**, sorts them into 12 categorie
 - **Copy, do not retype** — Every skill carries its exact text, an install procedure for the tool it belongs to, and a copy button on each part.
 - **Did it actually work?** — One tap after you use a skill says whether it worked, partly worked, or did not — for the model you used. Skills are ranked by that, counted per person, so answering more often moves nothing.
 - **A community, without a scoreboard** — Publish your own skills, follow the people whose work keeps helping you, and see on a skill itself which of them tried it. There is no public follower ranking and no endpoint that lists the graph.
-- **Sell what you write, if you want to** — The catalogue itself is free and stays free. Anyone publishing their own skills, tools or plugins can put a price on them: buyers pay in cryptocurrency, sellers are paid in USDT, and the platform keeps 12%. Since 1.1.0 the seller side is in the app itself — an **Earn** screen with your balance, your wallet, your payouts and a price on each of your listings. Nothing you publish is priced unless you price it.
 - **Eight languages, four of them right-to-left** — English, Persian, Arabic, Turkish, Hindi, Spanish, German and French — the interface, the numerals, the dates and the direction of the layout.
-
-## Selling your work
-
-Everything in the shipped catalogue is free. Alongside it there is a
-marketplace where the people who publish their own work can charge for it.
-
-| | |
-|---|---|
-| **You keep** | 88% of every sale |
-| **We keep** | 12%, and nothing else — no listing fee, no monthly fee, no payout fee |
-| **Prices** | US dollars, $1.00 to $999.00, set by you |
-| **Buyers pay** | in cryptocurrency, through NOWPayments |
-| **You are paid** | in USDT, on BEP-20 or TRC-20 |
-| **Smallest payout** | $20.00 |
-| **Hold** | 14 days before a sale can be withdrawn |
-
-The hold is not a cash-flow trick. The seller terms promise that if a listing
-turns out to be a scam, to infringe somebody's copyright, or to be the subject
-of a credible legal demand, **the money is frozen, returned to the buyer, and
-the business account is closed** — and that promise is only keepable while the
-money is still here. Once USDT has left for a wallet it is gone.
-
-Two things are worth saying about how it is built, because they are the parts
-that are easy to get wrong:
-
-**The paywall is in the endpoint, not the view.** A priced listing's body and
-install text are returned as empty strings by the API to anybody who has not
-bought it. A paywall that hides text with CSS is one that a glance at the page
-source walks straight through.
-
-**A buyer keeps what they bought, permanently.** Access is its own record, not
-a status on an order, so it survives the seller changing the price,
-unpublishing the listing, being banned, or leaving. It is withdrawn in exactly
-one case: the purchase is refunded.
-
-**The app earns; it does not buy.** From 1.1.0 the seller side is a screen in
-the app — turn on a business account, set the USDT wallet, watch four figures
-that mean four different things, ask to be paid, and price your own listings.
-Buying a paid listing happens in the browser, and that is a decision rather
-than an omission: selling digital goods inside an Android build is exactly what
-Cafe Bazaar's and Myket's billing rules cover, and a checkout in the APK is
-what gets a listing pulled. Being paid is not a purchase by the person holding
-the phone.
-
-Changing the payout wallet sends a notification to the account it belongs to —
-in the app, on the web app and by email. An address you did not set is
-something you find out about when it is set, not when a payout goes missing.
-
-The full terms are on the [site](https://ai.ehsanking.ir/terms#seller), in all
-eight languages, and there is a page explaining the whole thing at
-[ai.ehsanking.ir/earn](https://ai.ehsanking.ir/earn).
 
 ## How it stays offline
 
