@@ -29,24 +29,26 @@ Yapay zeka araçlarının ve onları işinizde daha iyi yapan becerilerin rehber
 
 | Dosya | Şunun için |
 |---|---|
-| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-arm64-v8a-release.apk) | Çoğu telefon — kabaca son sekiz yılda yapılmış her şey. **Buradan başlayın.** |
-| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-armeabi-v7a-release.apk) | Daha eski ya da giriş seviyesi telefonlar, 32 bit. |
-| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-x86_64-release.apk) | Emülatörler ve birkaç x86 tablet. |
+| [`SkillsAI.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI.apk) — 64 MB | Her Android telefon: arm64, 32-bit ARM ve x86 tek dosyada. Android 8.0 ve üzeri. |
 
-Yanlışını seçerseniz Android bozuk bir şey kurmak yerine kurulumu reddeder — yani önce `arm64-v8a` denemenin bir maliyeti yok.
+Her telefon için tek dosya; seçilecek bir şey yok.
 
 **İndirdiğinizi doğrulamak**
 
 Buradaki her APK aynı anahtarla imzalıdır ve bir şey kurmadan önce bunu doğrulayabilirsiniz:
 
 ```
-apksigner verify --print-certs app-arm64-v8a-release.apk
+apksigner verify --print-certs SkillsAI.apk
 ```
 
 Sertifikada `CN=Ehsan King, OU=Skills AI` ve şu SHA-256 parmak izi görünmeli. Bunu göstermeyen bir yapı buradan gelmemiştir.
 
 ```
 DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
+
+```
+31741a970b79658b1288378f6214072c986b06331e6d9bb07332bba459aa56a4  SkillsAI.apk
 ```
 
 ### Windows
@@ -63,8 +65,8 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 Windows yayıncıyı tanımadığını söyleyecek. Bu uyarı beklenen bir şey: yapı ücretli bir kod imzalama sertifikasıyla imzalanmadı. Sırf bana güvenip geçmenizi istemek yerine, her iki dosyanın SHA-256 değeri burada — indirdiğinizi karşılaştırın.
 
 ```
-3fc2f1d3d222c6ba4b548b09884ed6d8dde9f609dc7f9a9394acfad5d45d0be1  SkillsAI-windows-x64-setup.exe
-65b07b4d23503a7f613577d421d882a9b5625ea76aa4638d561f039491d644fa  SkillsAI-windows-x64.zip
+f5bf42a59cb6b2d571fc0c5b3e965eca40399e00a458f38d523378202a336a74  SkillsAI-windows-x64-setup.exe
+c153b1172534189166a5e577804d459e79ee282d2b79d7844196e6ccee5e9851  SkillsAI-windows-x64.zip
 ```
 
 ```
@@ -92,45 +94,7 @@ Skills AI bunlardan **102 araç için 5,402 tanesini** topluyor, 12 kategoriye a
 - **Kopyalayın, yeniden yazmayın** — Her beceri kendi tam metnini, ait olduğu araç için kurulum yordamını ve her parçada bir kopyalama düğmesini taşır.
 - **Gerçekten işe yaradı mı?** — Bir beceriyi kullandıktan sonraki tek dokunuş, kullandığınız model için işe yaradı mı, kısmen mi, yoksa yaramadı mı söyler. Beceriler buna göre sıralanır ve kişi başına sayılır; daha sık yanıtlamak hiçbir şeyi değiştirmez.
 - **Skor tablosu olmayan bir topluluk** — Kendi becerilerinizi yayımlayın, işi size sürekli yarayan kişileri takip edin ve becerinin kendi sayfasında hangilerinin denediğini görün. Herkese açık takipçi sıralaması yok, grafiği listeleyen bir uç nokta da yok.
-- **İsterseniz işinizi satın** — Kataloğun kendisi ücretsizdir ve öyle kalır. Kendi becerilerini, araçlarını ya da eklentilerini yayımlayan herkes onlara fiyat koyabilir: alıcı kripto parayla öder, satıcıya USDT ödenir, platformun payı %12. 1.1.0’dan itibaren satıcı tarafı uygulamanın içinde — bakiyeniz, cüzdanınız, ödemeleriniz ve her ilanın fiyatıyla bir **Kazanç** ekranı. Siz fiyat koymadıkça yayımladığınız hiçbir şey ücretli olmaz.
 - **Sekiz dil, dördü sağdan sola** — İngilizce, Farsça, Arapça, Türkçe, Hintçe, İspanyolca, Almanca ve Fransızca — arayüz, rakamlar, tarihler ve yerleşim yönü.
-
-## Kendi işinizi satmak
-
-Uygulamayla gelen her şey ücretsizdir ve öyle kalır. Yanı sıra, kendi işini
-yayımlayan herkesin ona bir fiyat koyabildiği bir pazar yeri var.
-
-| | |
-|---|---|
-| **Size kalan** | Her satışın %88'i |
-| **Bize kalan** | %12 ve başka hiçbir şey — listeleme ücreti yok, aylık ücret yok, ödeme ücreti yok |
-| **Fiyat** | ABD doları, 1,00 – 999,00, siz belirlersiniz |
-| **Alıcı öder** | Kripto parayla, NOWPayments üzerinden |
-| **Size ödenir** | USDT, BEP-20 veya TRC-20 üzerinden |
-| **En düşük ödeme** | 20,00 dolar |
-| **Bekleme** | Bir satışın çekilebilmesi için 14 gün |
-
-Bekleme süresi bir nakit akışı oyunu değil. Satıcı koşulları şunu taahhüt eder:
-bir ilan dolandırıcılık çıkarsa, birinin telif hakkını ihlal ederse ya da ciddi
-bir hukuki talebin konusu olursa, **para dondurulur, alıcıya iade edilir ve
-ticari hesap kapatılır** — ve bu söz yalnızca para hâlâ buradayken tutulabilir.
-Bir cüzdana gitmiş USDT gitmiştir.
-
-**Uygulama para kazanır, ama satın almaz.** 1.1.0'dan itibaren satıcı tarafı
-uygulamanın içinde bir ekran: ticari hesabı açmak, USDT cüzdanını girmek, dört
-farklı şeyi anlatan dört rakam, ödeme talebi ve kendi ilanlarınızı
-fiyatlandırmak. Ücretli bir ilanı satın almak tarayıcıda olur; bu bir eksiklik
-değil, bir karar: dijital ürünleri bir Android yapısının içinde satmak tam da
-Cafe Bazaar ile Myket'in ödeme kurallarının konusudur. Para almak, telefonu
-tutan kişinin satın alması değildir.
-
-Ödeme cüzdanının değişmesi, ait olduğu hesaba bildirim gönderir — uygulamada,
-web uygulamasında ve e-postayla. Sizin girmediğiniz bir adresi, bir ödeme
-kaybolduğunda değil, girildiği anda öğrenirsiniz.
-
-Koşulların tamamı sekiz dilde [sitede](https://ai.ehsanking.ir/terms#seller), ve
-her şeyi anlatan bir sayfa da
-[ai.ehsanking.ir/earn](https://ai.ehsanking.ir/earn) adresinde.
 
 ## Çevrimdışı nasıl kalıyor
 
