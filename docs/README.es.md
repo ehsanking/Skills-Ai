@@ -29,24 +29,26 @@ Un directorio de herramientas de IA y las habilidades que las hacen mejores en t
 
 | Archivo | Para |
 |---|---|
-| [`app-arm64-v8a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-arm64-v8a-release.apk) | La mayoría de los teléfonos — cualquiera de los últimos ocho años. **Empieza aquí.** |
-| [`app-armeabi-v7a-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-armeabi-v7a-release.apk) | Teléfonos antiguos o de gama de entrada, 32 bits. |
-| [`app-x86_64-release.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/app-x86_64-release.apk) | Emuladores y las pocas tabletas x86. |
+| [`SkillsAI.apk`](https://github.com/ehsanking/Skills-Ai/releases/latest/download/SkillsAI.apk) — 64 MB | Cualquier teléfono Android: arm64, ARM de 32 bits y x86 en un solo archivo. Android 8.0 o posterior. |
 
-Si eliges el equivocado, Android se niega a instalarlo en lugar de instalar algo roto — así que probar `arm64-v8a` primero no cuesta nada.
+Un solo archivo para cualquier teléfono, así que no hay nada que elegir.
 
 **Comprobar lo que descargaste**
 
 Cada APK aquí está firmado con la misma clave, y puedes comprobarlo antes de instalar nada:
 
 ```
-apksigner verify --print-certs app-arm64-v8a-release.apk
+apksigner verify --print-certs SkillsAI.apk
 ```
 
 El certificado debe decir `CN=Ehsan King, OU=Skills AI` con esta huella SHA-256. Una compilación que no la muestre no vino de aquí.
 
 ```
 DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4:BB:4F:66:E1:B4
+```
+
+```
+31741a970b79658b1288378f6214072c986b06331e6d9bb07332bba459aa56a4  SkillsAI.apk
 ```
 
 ### Windows
@@ -63,8 +65,8 @@ DF:9A:3E:BD:B2:28:06:F4:0F:99:3F:64:0D:46:A2:D2:5A:EA:12:49:53:0F:FF:39:C6:75:C4
 Windows dirá que no reconoce al editor. Esa advertencia es esperable: la compilación no está firmada con un certificado de firma de código de pago. En lugar de pedirte que la saltes por confianza, aquí está el SHA-256 de ambos archivos: comprueba el que descargaste.
 
 ```
-3fc2f1d3d222c6ba4b548b09884ed6d8dde9f609dc7f9a9394acfad5d45d0be1  SkillsAI-windows-x64-setup.exe
-65b07b4d23503a7f613577d421d882a9b5625ea76aa4638d561f039491d644fa  SkillsAI-windows-x64.zip
+f5bf42a59cb6b2d571fc0c5b3e965eca40399e00a458f38d523378202a336a74  SkillsAI-windows-x64-setup.exe
+c153b1172534189166a5e577804d459e79ee282d2b79d7844196e6ccee5e9851  SkillsAI-windows-x64.zip
 ```
 
 ```
@@ -92,47 +94,7 @@ Skills AI reúne **5,402 de ellos para 102 herramientas**, los ordena en 12 cate
 - **Copia, no vuelvas a escribir** — Cada habilidad lleva su texto exacto, el procedimiento de instalación de la herramienta a la que pertenece y un botón de copiar en cada parte.
 - **¿Funcionó de verdad?** — Un toque después de usar una habilidad dice si funcionó, funcionó en parte o no funcionó — para el modelo que usaste. Las habilidades se ordenan por eso, contado por persona, así que responder más veces no mueve nada.
 - **Una comunidad, sin marcador** — Publica tus propias habilidades, sigue a quienes te ayudan una y otra vez, y ve en la propia habilidad quién de ellos la probó. No hay ranking público de seguidores ni endpoint que liste el grafo.
-- **Vende lo que escribes, si quieres** — El catálogo es gratis y lo seguirá siendo. Quien publica sus propias habilidades, herramientas o complementos puede ponerles precio: el comprador paga en criptomoneda, al vendedor se le paga en USDT y la plataforma se queda el 12%. Desde la 1.1.0 el lado del vendedor está en la propia aplicación: una pantalla **Ganar**, con tu saldo, tu cartera, tus pagos y el precio de cada anuncio. Nada de lo que publiques tiene precio salvo que se lo pongas tú.
 - **Ocho idiomas, cuatro de derecha a izquierda** — Inglés, persa, árabe, turco, hindi, español, alemán y francés — la interfaz, los números, las fechas y la dirección del diseño.
-
-## Vender tu trabajo
-
-Todo lo que viene con la aplicación es gratis y lo seguirá siendo. Junto a eso
-hay un mercado donde quien publica su propio trabajo puede ponerle precio.
-
-| | |
-|---|---|
-| **Te quedas con** | el 88% de cada venta |
-| **Nos quedamos con** | el 12%, y nada más: sin cuota de publicación, sin cuota mensual, sin comisión de retiro |
-| **Precio** | en dólares, de 1,00 a 999,00, lo pones tú |
-| **El comprador paga** | en criptomoneda, a través de NOWPayments |
-| **A ti se te paga** | en USDT, por BEP-20 o TRC-20 |
-| **Retiro mínimo** | 20,00 dólares |
-| **Retención** | 14 días antes de poder retirar una venta |
-
-La retención no es un truco de caja. Las condiciones del vendedor prometen que
-si un anuncio resulta ser una estafa, infringe los derechos de autor de alguien
-o es objeto de una reclamación legal creíble, **el dinero se congela, se
-devuelve al comprador y se cierra la cuenta comercial**, y esa promesa solo se
-puede cumplir mientras el dinero siga aquí. El USDT que ya salió hacia una
-cartera se fue.
-
-**La aplicación cobra; no compra.** Desde la 1.1.0 el lado del vendedor es una
-pantalla dentro de la aplicación: activar la cuenta comercial, indicar la
-cartera USDT, cuatro cifras que significan cuatro cosas distintas, pedir el
-pago y poner precio a tus propios anuncios. Comprar un anuncio de pago ocurre
-en el navegador, y eso es una decisión y no un olvido: vender bienes digitales
-dentro de una compilación de Android es justo lo que cubren las reglas de pago
-de Cafe Bazaar y Myket. Cobrar no es una compra hecha por quien sostiene el
-teléfono.
-
-Cambiar la cartera de cobro envía un aviso a la cuenta a la que pertenece: en
-la aplicación, en la web y por correo. Una dirección que tú no pusiste se
-descubre en el momento en que se pone, no cuando falta un pago.
-
-Las condiciones completas están en el [sitio](https://ai.ehsanking.ir/terms#seller),
-en los ocho idiomas, y hay una página que lo explica todo en
-[ai.ehsanking.ir/earn](https://ai.ehsanking.ir/earn).
 
 ## Cómo se mantiene sin conexión
 
